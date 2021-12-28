@@ -26,6 +26,7 @@ typedef struct laCase
     int appartenance; //par defaut = 0, sinon nPassage du joueur
     int nMaison;
     int nHotel;
+    int hypothequee; //0 ou 1
 }t_case;
 
 ///DONNEES CARTE (puis creer 2 tableau de struct, son indice=son num)
