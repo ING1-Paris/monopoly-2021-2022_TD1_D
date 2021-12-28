@@ -38,7 +38,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="remplissageNbEtPseudo.c">
+		<Unit filename="plateau1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="remplissageDebut.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

@@ -11,10 +11,11 @@
 ///donnees par joueur
 typedef struct leJoueur
 {
+    int numJoueur;
     char pseudo[TAILPSEUDO];
     int argent;
     int emplacements; //commence à 0
-    int cartePrison; //0 ou 1
+    int cartePrison; //0 a 2
 }t_joueur;
 
 ///donnees par case
@@ -27,6 +28,7 @@ typedef struct laCase
     int nMaison;
     int nHotel;
     int hypothequee; //0 ou 1
+    int nCategRue;
 }t_case;
 
 ///DONNEES CARTE (puis creer 2 tableau de struct, son indice=son num)
@@ -45,7 +47,7 @@ typedef struct jeu
 {
     t_joueur tabJoueurND[MAXJOUEURS]; //Tableau de Structure de tous les joueurs
     t_case tabCase[32]; //Tableau de Structure de toutes les cases
-    //num de joueur/de case = son indice
+    //num de case = son indice
     int nbJoueur;
     int nTour; //num de tour
 
@@ -54,6 +56,7 @@ typedef struct jeu
 ///Sous Programmes
 void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs);
 void effacerConsole ();
+void plateau1();
 
 
 #endif // HEADSTRUCT_H_INCLUDED
