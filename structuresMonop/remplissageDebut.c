@@ -1,4 +1,5 @@
 #include "headStruct.h"
+trop des barres
 
 void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs)
 {
