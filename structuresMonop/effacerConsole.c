@@ -3,7 +3,7 @@
 void effacerConsole ()
 {
     system("cls");
-    test;
+
 }
 //ca efface tout, il faut reafficher ce qu'on veut garder
 //et ca donnera l'impression que c'est resté
