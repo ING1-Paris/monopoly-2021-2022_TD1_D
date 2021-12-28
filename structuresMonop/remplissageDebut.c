@@ -1,6 +1,6 @@
 #include "headStruct.h"
 
-void remplissageNbEtPseudo (int* pNbJ, t_joueur* pTabJoueurs)
+void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs)
 {
     //variables Locales
     int i=0;
@@ -34,6 +34,8 @@ void remplissageNbEtPseudo (int* pNbJ, t_joueur* pTabJoueurs)
         strcpy(pTabJoueurs[i].pseudo, pseudoL);
 
         pTabJoueurs[i].argent=200;
+        pTabJoueurs[i].emplacements=0;
+        pTabJoueurs[i].cartePrison=0;
     }
 
 
