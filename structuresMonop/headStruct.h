@@ -54,6 +54,6 @@ typedef struct jeu
 ///Sous Programmes
 void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs);
 void effacerConsole ();
-
+void plateau();
 
 #endif // HEADSTRUCT_H_INCLUDED
