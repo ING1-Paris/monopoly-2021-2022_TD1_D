@@ -3,13 +3,16 @@
 int main()
 {
     t_jeu monopoly;
+
+    ///c'est des verifications (vous pouvez enlever)
     int i;
-    //t_joueur mesJoueurs;
+    int okOuPas;
+    effacerConsole();
+    plateau1();
     remplissageDebut(&(monopoly.nbJoueur), &(monopoly.tabJoueurND));
     effacerConsole();
-
-    //Verifications ok (BLINDAGE!!)
-    printf("MAIN \nnb joueurs: %d \n", monopoly.nbJoueur);
+    plateau1();
+    printf("MAINverification \nnb joueurs: %d \n", monopoly.nbJoueur);
     for(i=0; i<monopoly.nbJoueur; i++)
     {
         printf("\npseudo du joueur%d : %s \n", i+1, monopoly.tabJoueurND[i].pseudo);

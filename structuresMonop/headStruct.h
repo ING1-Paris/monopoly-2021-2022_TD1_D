@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<string.h>
+#include <conio.h>
 
 #define MAXJOUEURS 10
 #define TAILPSEUDO 10
@@ -14,8 +15,9 @@ typedef struct leJoueur
     int numJoueur;
     char pseudo[TAILPSEUDO];
     int argent;
-    int emplacements; //commence à 0
+    int emplacements; //commence a 0
     int cartePrison; //0 a 2
+    //avatarPlateau
 }t_joueur;
 
 ///donnees par case
@@ -36,7 +38,7 @@ typedef struct laCarte
 {
     char evenement[TAILMESSAGE];
     char consequence[TAILMESSAGE];
-    int typeCarte; //0=deplacementAuNumCase 1=eplacementDeXCases 2=gainOuPerteDeX 3=carteSortirPrison
+    int typeCarte; //0=deplacementAuNumCase 1=deplacementDeXCases 2=gainOuPerteDeX 3=carteSortirPrison
     int deplacementAuNumCase;
     int deplacementDeXCases;
     int gainOuPerteDeX;
@@ -49,7 +51,9 @@ typedef struct jeu
     t_case tabCase[32]; //Tableau de Structure de toutes les cases
     //num de case = son indice
     int nbJoueur;
-    int nTour; //num de tour
+
+    //int tourDe; //num du joueur qui doit jouer
+    //int etape; //tirer les des ou achat ou.. (ce quon peut faire quune fois par tour)
 
  }t_jeu;
 
@@ -57,6 +61,11 @@ typedef struct jeu
 void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs);
 void effacerConsole ();
 void plateau1();
+//quasi finit:
+//void sauve(t_jeu* monjeu, int* succes);
+//void charge(t_jeu* monjeu, char filenom[], int* succes);
 
+//blindages
+void saisieNbPositif(int* nb);
 
 #endif // HEADSTRUCT_H_INCLUDED

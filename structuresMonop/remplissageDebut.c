@@ -13,7 +13,6 @@ void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs)
         scanf ("%d", &nbJoueurL);
     }while (0>=nbJoueurL || nbJoueurL>MAXJOUEURS);
     *pNbJ=nbJoueurL;
-    //printf("\nSP le nb de joueurs est : %d \n", *pNbJ);
 
     //saisie et remplissage noms
     for (i=0; i<nbJoueurL; i++)
@@ -21,7 +20,6 @@ void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs)
         printf ("\nPseudo du joueur %d :\t", i+1);
         fflush(stdin);
         gets(pseudoL);
-
         //blindage saisie
         while( (strlen(pseudoL) > TAILPSEUDO) )
             // + reprendre code qui permet de verifier que les caractere rentres sont des lettres et pas pseudos identiques
@@ -30,12 +28,10 @@ void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs)
             fflush(stdin);
             gets(pseudoL);
         }
-
         strcpy(pTabJoueurs[i].pseudo, pseudoL);
-        pTabJoueurs[i].argent=200;
+        pTabJoueurs[i].argent=1500;
         pTabJoueurs[i].emplacements=0;
         pTabJoueurs[i].cartePrison=0;
+        pTabJoueurs[i].numJoueur=i+1;
     }
-
-
 }
