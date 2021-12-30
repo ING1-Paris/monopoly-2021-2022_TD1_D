@@ -46,9 +46,9 @@ void selecUneCase()
                     coo.X=coo.X+12;
                 }
                 else {
-                  if (coo.Y <5 ) {
+                  if (coo.Y <10 ) {
                         coo.X=6;
-                        coo.Y++;
+                        coo.Y=coo.Y + 2;
                   } else {
                         coo.X=6;
                         coo.Y=2;
@@ -72,7 +72,7 @@ void selecUneCase()
                 //if monopoly.etape==lancement de dès
 
                 break;
-                /**
+                /*
             case 'e': case 'E':
                 coo.X=csbi.srWindow.Right;
                 coo.Y=csbi.srWindow.Bottom;
@@ -82,7 +82,7 @@ void selecUneCase()
             case 'w': // afficher la position X Y
                 effacerConsole();
                 printf("\nVos coordonnes sont: %d : %d", coo.X, coo.Y);
-                Sleep(150);
+                Sleep(1000);
                 effacerConsole();
                 plateau1();
                 printf("%s",msg);
