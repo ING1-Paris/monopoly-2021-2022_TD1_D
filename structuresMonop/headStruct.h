@@ -3,7 +3,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<string.h>
-#include <conio.h>
+#include <windows.h>
+//#include <conio.h>
+
+#define ESC '\x1b'
+#define UP 224
+#define DOWN '\[F'
+#define RIGHT '\[B'
+#define LEFT '\[C'
 
 #define MAXJOUEURS 10
 #define TAILPSEUDO 10
@@ -61,9 +68,10 @@ typedef struct jeu
 void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs);
 void effacerConsole ();
 void plateau1();
-//quasi finit:
+//PAS FINIT:
 //void sauve(t_jeu* monjeu, int* succes);
 //void charge(t_jeu* monjeu, char filenom[], int* succes);
+void selecUneCase();
 
 //blindages
 void saisieNbPositif(int* nb);

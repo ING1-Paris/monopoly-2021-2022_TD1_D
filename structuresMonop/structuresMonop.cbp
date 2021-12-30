@@ -50,6 +50,9 @@
 		<Unit filename="sauveg.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="selectionnerUneCase.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
