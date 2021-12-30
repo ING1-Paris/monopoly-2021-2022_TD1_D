@@ -6,7 +6,7 @@ int main()
     int choixP=0;//pr menu principal
     int choixT=0;//pr menu du tour
     int prix=0;
-    monopoly.tabCase.hypothequee=1;
+    //monopoly.tabCase.hypothequee=1;
 
     ///c'est des verifications (vous pouvez enlever)
     int i;

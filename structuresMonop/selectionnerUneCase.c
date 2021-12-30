@@ -81,8 +81,8 @@ void selecUneCase()
 
             case 'w': // afficher la position X Y
                 effacerConsole();
-                printf("\nVos coordonnes sont: %d : %d", coo.X, coo.Y);
-                Sleep(1000);
+                printf("\nVos coordonnes sont: X = %d ET Y = %d", coo.X, coo.Y);
+                Sleep(1500);
                 effacerConsole();
                 plateau1();
                 printf("%s",msg);
