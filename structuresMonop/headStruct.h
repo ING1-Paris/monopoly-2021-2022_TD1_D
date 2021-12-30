@@ -43,9 +43,9 @@ typedef struct laCarte
 {
     char evenement[TAILMESSAGE];
     char consequence[TAILMESSAGE];
-    int typeCarte; //0=deplacementAuNumCase 1=deplacementDeXCases 2=gainOuPerteDeX 3=carteSortirPrison
-    int deplacementAuNumCase;
-    int deplacementDeXCases;
+    int typeCarte; //1= libere de prison 2=aller à la case X 3=avancer de X cases 4=+ou- argent
+    int deplaceAlaCase;
+    int deplaceDeXCases;
     int gainOuPerteDeX;
 }t_carte;
 
@@ -70,6 +70,8 @@ void plateau1();
 void selecUneCase();
 void menuPrincipal(int* choix);
 void traitemMenuPrin(int action, int* pNbJ, t_joueur* pTabJoueurs);
+void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan);
+
 
 //blindages
 void saisieNbPositif(int* nb);
