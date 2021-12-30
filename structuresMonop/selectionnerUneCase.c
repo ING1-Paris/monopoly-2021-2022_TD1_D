@@ -4,14 +4,14 @@
 
 //https://openclassrooms.com/forum/sujet/probleme-de-deplacement-en-console
 // ajout de la variable esc dans la structure pour sortir du jeu
-
 void selecUneCase()
 {
     int ch;
     //effacerConsole();
     //plateau1();
 
-    char *msg="/n/n/nUtiliser  Tab pour deplacer le curseur/nTapez s pour sauvegarder la partie/nTapez c pour charger une partie/nTapez echap pour quitter la partie";
+    char *msg="Utiliser Tab pour deplacer le curseur et Echap pour quitter le jeu";
+    ///nTapez s pour sauvegarder la partie/nTapez c pour charger une partie/nTapez echap pour quitter la partie
     COORD coo;
     HANDLE hscr;
     CONSOLE_CURSOR_INFO cci,old_cci;                // not really needed, just for test
@@ -34,7 +34,7 @@ void selecUneCase()
     //coo.X=(short)(csbi.srWindow.Right/2);
     SetConsoleCursorPosition(hscr,coo);
     do {
-        while(!kbhit());
+        //while(!kbhit());
         ch=getch();
         //effacerConsole();
         //printf("\ntouche %d",ch);
@@ -90,6 +90,7 @@ void selecUneCase()
             default: break;
         }
         SetConsoleCursorPosition(hscr,coo);
-    } while(ch!=ESC);
+    } while(ch!=tESC);
+    effacerConsole();
     SetConsoleCursorInfo(hscr,&old_cci);            // needed if lines 37 is used
 }
