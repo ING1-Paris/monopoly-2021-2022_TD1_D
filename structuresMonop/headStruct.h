@@ -4,17 +4,15 @@
 #include <stdlib.h>
 #include<string.h>
 #include <windows.h>
-//#include <conio.h>
 
-#define ESC '\x1b'
-#define UP 224
-#define DOWN '\[F'
-#define RIGHT '\[B'
-#define LEFT '\[C'
+// Valeurs des touches du clavier
+#define tTAB 9
+#define tENTER 13
+#define tESC '\x1b'//pr l'exemple selectionnerUneCase
 
 #define MAXJOUEURS 10
 #define TAILPSEUDO 10
-#define TAILMESSAGE 80
+#define TAILMESSAGE 80//pr l'exemple selectionnerUneCase
 
 ///donnees par joueur
 typedef struct leJoueur
@@ -24,7 +22,7 @@ typedef struct leJoueur
     int argent;
     int emplacements; //commence a 0
     int cartePrison; //0 a 2
-    //avatarPlateau
+    char avatarPlateau;
 }t_joueur;
 
 ///donnees par case
@@ -37,7 +35,7 @@ typedef struct laCase
     int nMaison;
     int nHotel;
     int hypothequee; //0 ou 1
-    int nCategRue;
+    int nGroupeRue;
 }t_case;
 
 ///DONNEES CARTE (puis creer 2 tableau de struct, son indice=son num)
@@ -58,20 +56,20 @@ typedef struct jeu
     t_case tabCase[32]; //Tableau de Structure de toutes les cases
     //num de case = son indice
     int nbJoueur;
-
     //int tourDe; //num du joueur qui doit jouer
     //int etape; //tirer les des ou achat ou.. (ce quon peut faire quune fois par tour)
 
  }t_jeu;
 
 ///Sous Programmes
-void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs);
 void effacerConsole ();
 void plateau1();
 //PAS FINIT:
 //void sauve(t_jeu* monjeu, int* succes);
 //void charge(t_jeu* monjeu, char filenom[], int* succes);
 void selecUneCase();
+void menuPrincipal(int* choix);
+void traitemMenuPrin(int action, int* pNbJ, t_joueur* pTabJoueurs);
 
 //blindages
 void saisieNbPositif(int* nb);

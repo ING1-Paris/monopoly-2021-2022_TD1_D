@@ -41,16 +41,19 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="plateau1.c">
+		<Unit filename="menuPrincipal.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="remplissageDebut.c">
+		<Unit filename="plateau1.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sauveg.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="selectionnerUneCase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="traitemMenuPrin.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
