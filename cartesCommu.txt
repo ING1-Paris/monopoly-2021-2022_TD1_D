@@ -1,0 +1,12 @@
+Vous etes libere de prison :
+Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue 
+1
+0
+0
+0
+Allez en prison :
+Avancez tout droit en prison. Ne passez pas par la case Depart. Ne recevez pas 200 centimes.
+2
+0
+0
+0

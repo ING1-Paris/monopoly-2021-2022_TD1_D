@@ -14,8 +14,8 @@ void sauve(t_jeu* monjeu, int* succes){
 	if (file==NULL)
     {
         printf("erreur d'ouverture fichier pour l'enregistrement\n");
+        printf("NB: sauvegarde possible uniquement sur Windows\n");
         *succes=1; //reproposer un choix
-        fclose(file);
     }
     else{
         fwrite(monjeu,sizeof(t_jeu),1,file); // params: pointeur struct, taille, nb objets(1structure), file
@@ -30,8 +30,8 @@ void charge(t_jeu* monjeu, char filenom[], int* succes){
     if (file==NULL)
     {
         printf("erreur d'ouverture fichier pour le chargement\n");
+        printf("NB: chargement possible uniquement sur Windows\n");
         *succes=1; //reproposer un choix
-        fclose(file);
     }
     else
     {

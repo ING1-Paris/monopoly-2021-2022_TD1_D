@@ -47,6 +47,9 @@
 		<Unit filename="plateau1.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="remplirCartes.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sauveg.c">
 			<Option compilerVar="CC" />
 		</Unit>

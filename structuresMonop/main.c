@@ -16,7 +16,7 @@ int main()
     //effacerConsole();
     //plateau1();
     //menuPrincipal(&choixP);
-    traitemMenuPrin(choixP, &monopoly.nbJoueur, &monopoly.tabJoueurND);
+    //traitemMenuPrin(choixP, &monopoly.nbJoueur, &monopoly.tabJoueurND);
     //printf("MAINtest: nb joueurs %d \npseudo joueur1: %s", monopoly.nbJoueur, monopoly.tabJoueurND[0].pseudo);
 
     //selecUneCase();
@@ -25,6 +25,7 @@ int main()
     remplirCartes(&tabCom, &tabChan);
     printf("Verif MAIN carte1 \n evenemt: %s \n conseq: %s", tabCom[0].evenement, tabCom[0].consequence);
     printf("\ntype carte %d \n", tabCom[0].typeCarte);
+    printf("carte2 \n evenemt: %s", tabCom[1].evenement);
 
     return 0;
 }

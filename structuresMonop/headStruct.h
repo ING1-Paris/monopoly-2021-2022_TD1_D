@@ -12,7 +12,7 @@
 
 #define MAXJOUEURS 10
 #define TAILPSEUDO 10
-#define TAILMESSAGE 80//pr l'exemple selectionnerUneCase
+#define TAILMESSAGE 100
 
 ///donnees par joueur
 typedef struct leJoueur
@@ -43,7 +43,7 @@ typedef struct laCarte
 {
     char evenement[TAILMESSAGE];
     char consequence[TAILMESSAGE];
-    int typeCarte; //1= libere de prison 2=aller à la case X 3=avancer de X cases 4=+ou- argent
+    int typeCarte; //1= libere de prison 2=aller a la case X 3=avancer de X cases 4=+ou- argent
     int deplaceAlaCase;
     int deplaceDeXCases;
     int gainOuPerteDeX;

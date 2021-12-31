@@ -2,7 +2,7 @@
 
 void traitemMenuPrin(int action, int* pNbJ, t_joueur* pTabJoueurs)
 {
-    //Nouvelle Partie
+    //NOUVELLE PARTIE
     if (action==1)
     {
         effacerConsole();
@@ -61,7 +61,7 @@ void traitemMenuPrin(int action, int* pNbJ, t_joueur* pTabJoueurs)
         }
         /**
     }
-    //Charger
+    //CHARGER
     if (action==2)
     {
 
