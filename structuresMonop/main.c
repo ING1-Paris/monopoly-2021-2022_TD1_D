@@ -15,7 +15,13 @@ int main()
     int tou;
     int fin=0;
 
-
+    //Verifications fonction remplirCase
+    remplirCartes(&tabCom, &tabChan);
+    for (i=0; i<=16;i++)
+    {
+        printf("Verif MAIN carte %d \n evenemt: %s \n conseq: %s", i+1, tabCom[i].evenement, tabCom[i].consequence);
+        printf("\ntype carte %d \n", tabCom[i].typeCarte);
+    }
 
                     ///***************mettez vos VERIFICATIONS ICI*******************//
 

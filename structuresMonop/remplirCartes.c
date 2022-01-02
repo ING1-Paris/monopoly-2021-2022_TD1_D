@@ -31,7 +31,7 @@ void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan)
     }
     else{
         //printf("fichier ouvert");
-        for (i=0; i<2; i++) //Tu devras changer le 2 par 16 qd ttes les cartes seront la
+        for (i=0; i<=16; i++) //Tu devras changer le 2 par 16 qd ttes les cartes seront la
         {
             fgets(tabCartCom[i].evenement, TAILMESSAGE, pfileCo);
             fgets(tabCartCom[i].consequence, TAILMESSAGE, pfileCo);

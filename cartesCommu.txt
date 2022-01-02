@@ -1,5 +1,5 @@
 Vous etes libere de prison :
-Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue 
+Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue
 1
 0
 0
@@ -10,3 +10,87 @@ Avancez tout droit en prison. Ne passez pas par la case Depart. Ne recevez pas 2
 0
 0
 0
+Vous heritez d'un cousin eloigne :
+Gagnez 100 centimes.
+4
+0
+0
++100
+C'est votre anniversaire :
+Recevez 20 centimes.
+4
+0
+0
++20
+Allez a la case départ :
+Placez vous sur la case départ. Recevez 200 centimes.
+2
+0
+0
+0
+Une entreprise etrangere ouvre une usine pret de chez vous :
+Gagnez 100 centimes.
+4
+0
+0
++100
+Votre banque ferme a cause de manque de moyen :
+Perdez 80 centimes.
+4
+0
+0
+-80
+Vous etes invite a un mariage:
+Allez a nomderue.
+2
+27
+0
+0
+Une association vous apprend des techniques pour cultiver la terre :
+Gagnez 50 centimes.
+4
+0
+0
++50
+Un programme d'aide humanitaire construit des puits pret de chez vous :
+Gagnez 100 centimes
+4
+0
+0
++100
+Vous vous perdez dans les rues de la ville:
+Avancez de 3 cases.
+3
+0
+3
+0
+Le nouveau gouvernement augmente les impôts :
+Perdez 35 centimes.
+4
+0
+0
+-35
+Vous trouvez 10 centimes dans la rue :
+Gagnez 10 centimes.
+4
+0
+0
++10
+Vous etes accepte a l'unviversite :
+Perdez 100 centimes.
+4
+0
+0
+-100
+Votre frere vous envoies de l'argent :
+Gagnez 30 centimes.
+4
+0
+0
++30
+Un touriste etranger vous donne de l'argent :
+Gagnez 15 centimes.
+4
+0
+0
++15
