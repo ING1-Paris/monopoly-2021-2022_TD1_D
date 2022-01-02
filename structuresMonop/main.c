@@ -23,9 +23,11 @@ int main()
 
     //Verifications fonction remplirCase
     remplirCartes(&tabCom, &tabChan);
-    printf("Verif MAIN carte1 \n evenemt: %s \n conseq: %s", tabCom[0].evenement, tabCom[0].consequence);
-    printf("\ntype carte %d \n", tabCom[0].typeCarte);
-    printf("carte2 \n evenemt: %s", tabCom[1].evenement);
+    for (i=0; i<=16;i++)
+    {
+        printf("Verif MAIN carte %d \n evenemt: %s \n conseq: %s", i+1, tabCom[i].evenement, tabCom[i].consequence);
+        printf("\ntype carte %d \n", tabCom[i].typeCarte);
+    }
 
     return 0;
 }
