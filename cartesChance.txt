@@ -1,0 +1,90 @@
+Vous etes libere de prison :
+Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue.
+1
+0
+0
+0
+Allez en prison :
+Avancez tout droit en prison. Ne passez pas par la case Depart. Ne recevez pas 200 centimes.
+2
+8
+0
+0
+Vous trouvez un velo abondonne :
+Avancez de 5 cases, si vous passez par la case Depart gagnez 200 centimes.
+3
+0
+5
+0
+Une association humanitaire vous vient en aide :
+Gagnez 50 centimes.
+4
+0
+0
++50
+Votre monaie perd de la valeur sur le marche des changes :
+Perdez 50 centimes.
+4
+0
+0
+-50
+Des puissances etrangeres viennent voler vos ressources :
+Perdez 100 centimes.
+4
+0
+0
+-100
+Vous trouvez un travail chez un riche proprietaire de la region :
+Gagnez 20 centimes.
+4
+0
+0
++20
+Un membre de votre famille trouve un travail à l'etranger :
+Gagnez 150 centimes.
+4
+0
+0
++150
+Une grande entreprise pret de chez vous est delocalisee :
+Perdez 150 centimes.
+4
+0
+0
+-150
+Vous trouvez des pieces rares dans une decharge :
+Gagnez 20 centimes.
+4
+0
+0
++20
+Allez a la case Depart :
+Placez vous sur la case Depart. Recevez 200 centimes.
+2
+0
+0
+0
+Vous etes invites a un enterrement :
+Allez a nomderue. Recevez 200 centimes si vous passez par la case depart.
+2
+4
+0
+0
+Les cultures meurent a cause du manque de pluie :
+Perdez 200 centimes.
+4
+0
+0
+-200
+Un touriste etranger vous donne de l'argent :
+Gagnez 25 centimes.
+4
+0
+0
++25
+Vous tombez gravement malade. Payez les frais du soignant :
+Perdez 80 centimes.
+4
+0
+0
+-80
