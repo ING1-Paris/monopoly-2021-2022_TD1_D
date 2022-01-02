@@ -4,13 +4,13 @@ void afficherMenuP()
 {
     effacerConsole();
     printf("\t\t\t   MENU PRINCIPAL\n");
-    printf("\tUtilisez Tab pour deplacer le curseur et Enter pour valider\n\n");
+    printf("\tUtilisez Tab pour d%cplacer le curseur et Enter pour valider\n\n", 0x82);
     printf("\n %c Nouvelle partie \n\n %c Charger partie existante \n\n %c Sauvegarder partie actuelle",0x10, 0x10, 0x10);
-    printf("\n\n %c Afficher les regles \n\n %c Afficher le nom des membres de l'equipe du projet",0x10, 0x10);
+    printf("\n\n %c Afficher les regles \n\n %c Afficher le nom des membres de l'%cquipe du projet",0x10, 0x10, 0x82);
     printf("\n\n %c Quitter le jeu ( pensez %c sauvegarder %c )",0x10,0x85, 0x01);
 }
 
-void menuPrincipal(int* choix)
+void menuPrincipal(int* choix, t_jeu* partieEnCours)
 {
     int ch;
     COORD coo;
@@ -21,7 +21,6 @@ void menuPrincipal(int* choix)
     SetConsoleCursorPosition(hscr,coo);
     effacerConsole();
     afficherMenuP();
-    SetConsoleCursorPosition(hscr,coo);
     do {
         ch=getch();//obtient touche appuyee
 
@@ -71,7 +70,7 @@ void menuPrincipal(int* choix)
                 {
                     //*choix=5;
                     effacerConsole();
-                    printf("ECE Campus Paris \nING1 TD1\n\n\tMembres de l'equipe D:\n");
+                    printf("ECE Campus Paris \nING1 TD1\n\n\tMembres de l'%cquipe D:\n", 0x82);
                     printf("\n\n COUSY Daria\n DE SAINT PERN Louis-Marie\n EYRAUD J%cr%cmy\n PERRIN Giulian", 0x82, 0x82);
                     printf("\n\n\nAppuyez sur M pour retourner au Menu Principal");
                 }
@@ -84,13 +83,13 @@ void menuPrincipal(int* choix)
                     return 0;
                 }
                 break;
-
+//effacer partie M
             //M : retourner au Menu (reafficher)
             case 'm': case 'M':
                 effacerConsole();
                 afficherMenuP();
                 break;
-
+/**
             //FONCTIONS CACHEES
             //w : afficher la position X Y
             case 'w':
@@ -100,6 +99,7 @@ void menuPrincipal(int* choix)
                 effacerConsole();
                 afficherMenuP();
                 break;
+                **/
             default: break;
         }
         SetConsoleCursorPosition(hscr,coo);

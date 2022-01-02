@@ -1,6 +1,7 @@
 #include "headStruct.h"
-
+/**
 void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs)
+
 {
     //variables Locales
     int i=0;
@@ -32,6 +33,7 @@ void remplissageDebut (int* pNbJ, t_joueur* pTabJoueurs)
         pTabJoueurs[i].argent=1500;
         pTabJoueurs[i].emplacements=0;
         pTabJoueurs[i].cartePrison=0;
-        pTabJoueurs[i].numJoueur=i+1;
     }
+
 }
+**/

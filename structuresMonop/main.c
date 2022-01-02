@@ -8,24 +8,23 @@ int main()
     int choixP=0;//pr menu principal
     int choixT=0;//pr menu du tour
     int prix=0;
-    //monopoly.tabCase.hypothequee=1;
 
-    ///c'est des verifications (vous pouvez enlever)
-    int i;
+    //variables pr verification
+    int i, j;
     int okOuPas;
-    //effacerConsole();
-    //plateau1();
-    //menuPrincipal(&choixP);
-    //traitemMenuPrin(choixP, &monopoly.nbJoueur, &monopoly.tabJoueurND);
-    //printf("MAINtest: nb joueurs %d \npseudo joueur1: %s", monopoly.nbJoueur, monopoly.tabJoueurND[0].pseudo);
+    int tou;
+    int fin=0;
 
-    //selecUneCase();
 
-    //Verifications fonction remplirCase
-    remplirCartes(&tabCom, &tabChan);
-    printf("Verif MAIN carte1 \n evenemt: %s \n conseq: %s", tabCom[0].evenement, tabCom[0].consequence);
-    printf("\ntype carte %d \n", tabCom[0].typeCarte);
-    printf("carte2 \n evenemt: %s", tabCom[1].evenement);
 
-    return 0;
+                    ///***************mettez vos VERIFICATIONS ICI*******************//
+
+    menuPrincipal(&choixP, &monopoly);
+    traitemMenuPrin(choixP, &monopoly.nbJoueur, &monopoly.tabJoueurND);
+    for (i=0; i<monopoly.nbJoueur; i++)
+    {
+        printf("\nMAIN \npseudo joueur n%d : %s %c", i+1, monopoly.tabJoueurND[i].pseudo, monopoly.tabJoueurND[i].avatarPlateau);
+    }
+
+                    ///**************************************************************//
 }

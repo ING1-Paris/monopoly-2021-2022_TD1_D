@@ -13,16 +13,18 @@
 #define MAXJOUEURS 10
 #define TAILPSEUDO 10
 #define TAILMESSAGE 100
+#define SAISIEMAXNB 10 //nb de chiffres qu'on peut saisir (pour blindages prcq j'utilise un char avant de convertir en int)
 
 ///donnees par joueur
 typedef struct leJoueur
 {
-    int numJoueur;
     char pseudo[TAILPSEUDO];
     int argent;
-    int emplacements; //commence a 0
+    int emplacementAct; //commence a 0
+    int emplacementPrec;
     int cartePrison; //0 a 2
     char avatarPlateau;
+    int prisonnier; //0 ou 1
 }t_joueur;
 
 ///donnees par case
@@ -68,12 +70,15 @@ void plateau1();
 //void sauve(t_jeu* monjeu, int* succes);
 //void charge(t_jeu* monjeu, char filenom[], int* succes);
 void selecUneCase();
-void menuPrincipal(int* choix);
+void menuPrincipal(int* choix, t_jeu* partieEnCours);
 void traitemMenuPrin(int action, int* pNbJ, t_joueur* pTabJoueurs);
 void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan);
+void saisieAvatarPlateau(t_joueur* tab);
 
 
 //blindages
-void saisieNbPositif(int* nb);
+void saisieEntPos(int* nb);
+void saisieChaine(int tailleChaine, char* chaine[tailleChaine]);
+
 
 #endif // HEADSTRUCT_H_INCLUDED
