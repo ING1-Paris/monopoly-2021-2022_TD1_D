@@ -38,6 +38,8 @@ typedef struct laCase
     int nHotel;
     int hypothequee; //0 ou 1
     int nGroupeRue;
+    int prix;    ///prix de la rue a l'achat
+    int facture; ///prix a payer quand on arrive sur la rue
 }t_case;
 
 ///DONNEES CARTE (puis creer 2 tableau de struct, son indice=son num)
@@ -69,11 +71,12 @@ void plateau1();
 //PAS FINIT:
 //void sauve(t_jeu* monjeu, int* succes);
 //void charge(t_jeu* monjeu, char filenom[], int* succes);
-void selecUneCase();
+void selecUneCase(t_jeu monopoly);
 void menuPrincipal(int* choix, t_jeu* partieEnCours);
 void traitemMenuPrin(int action, int* pNbJ, t_joueur* pTabJoueurs);
 void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan);
 void saisieAvatarPlateau(t_joueur* tab);
+void couleur(int nume, t_jeu monopoly);
 
 
 //blindages

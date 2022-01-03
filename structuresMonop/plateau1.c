@@ -95,7 +95,7 @@ void plateau1()
 
 
 char cas[12] = "|__________|";
-int largeur = 4;
+int largeur = 3;
 int longueur = 8;
 int ligne;
 int i;
