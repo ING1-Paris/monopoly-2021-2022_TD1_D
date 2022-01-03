@@ -37,6 +37,12 @@
 		<Unit filename="blindages.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="couleur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="detailUneCase.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="effacerConsole.c">
 			<Option compilerVar="CC" />
 		</Unit>
