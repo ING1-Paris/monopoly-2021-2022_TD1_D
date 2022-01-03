@@ -14,7 +14,7 @@ int main()
     int okOuPas;
     int tou;
     int fin=0;
-
+/**
     //Verifications fonction remplirCase
     remplirCartes(&tabCom, &tabChan);
     for (i=0; i<=16;i++)
@@ -22,15 +22,20 @@ int main()
         printf("Verif MAIN carte %d \n evenemt: %s \n conseq: %s", i+1, tabCom[i].evenement, tabCom[i].consequence);
         printf("\ntype carte %d \n", tabCom[i].typeCarte);
     }
-
+**/
                     ///***************mettez vos VERIFICATIONS ICI*******************//
 
-    menuPrincipal(&choixP, &monopoly);
+    //menuPrincipal(&choixP, &monopoly);
+    choixP=1;
     traitemMenuPrin(choixP, &monopoly.nbJoueur, &monopoly.tabJoueurND);
     for (i=0; i<monopoly.nbJoueur; i++)
     {
         printf("\nMAIN \npseudo joueur n%d : %s %c", i+1, monopoly.tabJoueurND[i].pseudo, monopoly.tabJoueurND[i].avatarPlateau);
     }
+
+
+    lancerDes(&monopoly, 0);
+    printf("\n\nemplacement joueur %d : %d", 0, monopoly.tabJoueurND[0].emplacementAct);
 
                     ///**************************************************************//
 }

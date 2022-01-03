@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include<string.h>
 #include <windows.h>
+#include <time.h>
 
 // Valeurs des touches du clavier
 #define tTAB 9
