@@ -34,10 +34,16 @@
 		<Unit filename="SaisieAvatarPlateau.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="aller en prison.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="blindages.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="couleur.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="des.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="detailUneCase.c">

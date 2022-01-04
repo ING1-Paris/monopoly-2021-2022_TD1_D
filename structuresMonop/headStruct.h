@@ -78,7 +78,8 @@ void traitemMenuPrin(int action, int* pNbJ, t_joueur* pTabJoueurs);
 void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan);
 void saisieAvatarPlateau(t_joueur* tab);
 void couleur(int nume, t_jeu monopoly);
-
+int lancerDes (t_jeu* monop, int numJoueur);
+void allerEnPrison(t_joueur* lesJoueurs, int numJoueur);
 
 //blindages
 void saisieEntPos(int* nb);
