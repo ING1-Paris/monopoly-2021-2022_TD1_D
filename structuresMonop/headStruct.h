@@ -78,14 +78,15 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs);
 void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan);
 void saisieAvatarPlateau(t_joueur* tab);
 void couleur(int nume, t_jeu monopoly);
-void lancerDes (t_jeu* monop, int numJoueur);
-
+int lancerDes (t_jeu* monop, int numJoueur);
+void allerEnPrison(t_joueur* lesJoueurs, int numJoueur);
 
 //blindages
 void saisieEntPos(int* nb);
 void saisieChaine(int tailleChaine, char* chaine[tailleChaine]);
+void gotoligcol( int lig, int col );
 
-//placer à la fin d'un sous programme
+//placer a la fin d'un sous programme
 //pour que le joueur puisse confirmer qu'il a finit
 void retourAuJeu();
 void retourAuMenu();

@@ -1,12 +1,24 @@
 #include "headStruct.h"
 
-void lancerDes (t_jeu* monop, int numJoueur)
+int lancerDes (t_jeu* monop, int numJoueur)
 {
-    int des=4;
-    //calcul avec fonction random
-    //et s'il est deja en prison ou pas
-    //penser à inclure verifier si doublons
-    //ex : if 3 doubles && pas en prison :  monop->tabJoueurND[numJoueur].prisonnier=1
-    monop->tabJoueurND[numJoueur].emplacementPrec=monop->tabJoueurND[numJoueur].emplacementAct;
-    monop->tabJoueurND[numJoueur].emplacementAct+=des;
+    int de1=0, de2=0, sommeDes=0, comptDoubles=0;
+    srand(time(NULL));
+        {
+            de1 = rand()%(6-1+1)+1;
+            de2 = rand()%(6-1+1)+1;
+            sommeDes=de1+de2;
+            printf("%d et %d", de1, de2);
+            if( de1==de2)
+            {
+                comptDoubles++;
+            }
+            if (comptDoubles==3)
+            {
+                printf("Allez en prison !");
+                allerEnPrison(&(monop->tabJoueurND), numJoueur);
+            }
+
+        }
+        return sommeDes;
 }
