@@ -46,6 +46,9 @@
 		<Unit filename="effacerConsole.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="gotoligcol.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="headStruct.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
