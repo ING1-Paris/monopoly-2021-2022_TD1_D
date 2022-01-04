@@ -42,7 +42,7 @@ void saisieChaine(int tailleChaine, char* chaine[tailleChaine])
     int i;
     fflush(stdin);
     fgets(chaineTemp, tailleChaine+1, stdin);
-    printf("%d", strlen(chaineTemp));
+    printf("taille de votre saisie :  %d \n", strlen(chaineTemp));
             while( strlen(chaineTemp) >= (tailleChaine) )
             {
                 printf ("\nSaisie invalide \nVous avez %d caracteres maximum :\t", tailleChaine);

@@ -10,9 +10,10 @@ void afficherMenuP()
     printf("\n\n %c Quitter le jeu ( pensez %c sauvegarder %c )",0x10,0x85, 0x01);
 }
 
-void menuPrincipal(int* choix, t_jeu* partieEnCours)
+void menuPrincipal(t_jeu* partieEnCours)
 {
     int ch;
+    int sortir=0;
     COORD coo;
     HANDLE hscr;
     hscr=GetStdHandle(STD_OUTPUT_HANDLE);
@@ -43,17 +44,18 @@ void menuPrincipal(int* choix, t_jeu* partieEnCours)
                 //Nouvelle Partie
                 if (coo.Y==4)
                 {
-                    *choix=1;
+                    remplissageDebut(&(partieEnCours->nbJoueur), &(partieEnCours->tabJoueurND));
+                    //tours
                 }
                 //Charger Partie
                 if (coo.Y==6)
                 {
-                    *choix=2;
                 }
                 //Sauvergarder
                 if (coo.Y==8)
                 {
-                    //*choix=3;
+                    sauve(partieEnCours);
+
                 }
                 //Afficher regles
                 if (coo.Y==10)
@@ -80,10 +82,10 @@ void menuPrincipal(int* choix, t_jeu* partieEnCours)
                     effacerConsole();
                     printf("\n\n\n\t\tA BIENTOT \n\n-l'%cquipe D du TD1",0x82);
                     Sleep(2000);
-                    return 0;
+                    sortir=1;
                 }
                 break;
-//effacer partie M
+            //effacer partie M
             //M : retourner au Menu (reafficher)
             case 'm': case 'M':
                 effacerConsole();
@@ -103,6 +105,6 @@ void menuPrincipal(int* choix, t_jeu* partieEnCours)
             default: break;
         }
         SetConsoleCursorPosition(hscr,coo);
-    } while(*choix==0);
+    } while(sortir!=1);
     effacerConsole();
 }

@@ -5,8 +5,7 @@ int main()
     t_jeu monopoly;
     t_carte tabCom[16]; //pile cartes communautaires
     t_carte tabChan[16]; //pile cartes chance
-    int choixP=0;//pr menu principal
-    int choixT=0;//pr menu du tour
+    monopoly.nbJoueur=0;
     int prix=0;
 
     //variables pr verification
@@ -25,14 +24,9 @@ int main()
 **/
                     ///***************mettez vos VERIFICATIONS ICI*******************//
 
-    //menuPrincipal(&choixP, &monopoly);
-    choixP=1;
-    traitemMenuPrin(choixP, &monopoly.nbJoueur, &monopoly.tabJoueurND);
-    for (i=0; i<monopoly.nbJoueur; i++)
-    {
-        printf("\nMAIN \npseudo joueur n%d : %s %c", i+1, monopoly.tabJoueurND[i].pseudo, monopoly.tabJoueurND[i].avatarPlateau);
-    }
-
+    menuPrincipal(&monopoly);
+    effacerConsole();
+    plateau1();
 
     lancerDes(&monopoly, 0);
     printf("\n\nemplacement joueur %d : %d", 0, monopoly.tabJoueurND[0].emplacementAct);

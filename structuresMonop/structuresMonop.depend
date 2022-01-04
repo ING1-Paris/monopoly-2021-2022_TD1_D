@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1641296600 source:c:\users\daria\documents\repositorygit1\structuresmonop\main.c
+	"headStruct.h"
+
+1641296424 c:\users\daria\documents\repositorygit1\structuresmonop\headstruct.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+
+1641131500 source:c:\users\daria\documents\repositorygit1\structuresmonop\effacerconsole.c
+	"headStruct.h"
+
+1641294060 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplissagedebut.c
+	"headStruct.h"
+
+1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\plateau1.c
+	"headStruct.h"
+
+1641296641 source:c:\users\daria\documents\repositorygit1\structuresmonop\sauveg.c
+	"headStruct.h"
+
+1641296424 source:c:\users\daria\documents\repositorygit1\structuresmonop\blindages.c
+	"headStruct.h"
+
+1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\selectionnerunecase.c
+	"headStruct.h"
+
+1641296189 source:c:\users\daria\documents\repositorygit1\structuresmonop\menuprincipal.c
+	"headStruct.h"
+
+1641165530 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplircartes.c
+	"headStruct.h"
+
+1641157587 source:c:\users\daria\documents\repositorygit1\structuresmonop\saisieavatarplateau.c
+	"headStruct.h"
+
+1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\couleur.c
+	"headStruct.h"
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\detailunecase.c
+	"headStruct.h"
+
+1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\des.c
+	"headStruct.h"
+
+1641296707 source:c:\users\daria\documents\repositorygit1\structuresmonop\retouraujeu.c
+	"headStruct.h"
+

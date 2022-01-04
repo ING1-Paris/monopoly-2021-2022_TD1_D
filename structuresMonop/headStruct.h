@@ -69,20 +69,27 @@ typedef struct jeu
 ///Sous Programmes
 void effacerConsole ();
 void plateau1();
-//PAS FINIT:
-//void sauve(t_jeu* monjeu, int* succes);
+void sauve(t_jeu* monjeu);
 //void charge(t_jeu* monjeu, char filenom[], int* succes);
 void selecUneCase(t_jeu monopoly);
-void menuPrincipal(int* choix, t_jeu* partieEnCours);
-void traitemMenuPrin(int action, int* pNbJ, t_joueur* pTabJoueurs);
+void afficherMenuP();
+void menuPrincipal(t_jeu* partieEnCours);
+void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs);
 void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan);
 void saisieAvatarPlateau(t_joueur* tab);
 void couleur(int nume, t_jeu monopoly);
+void lancerDes (t_jeu* monop, int numJoueur);
 
 
 //blindages
 void saisieEntPos(int* nb);
 void saisieChaine(int tailleChaine, char* chaine[tailleChaine]);
+
+//placer à la fin d'un sous programme
+//pour que le joueur puisse confirmer qu'il a finit
+void retourAuJeu();
+void retourAuMenu();
+
 
 
 #endif // HEADSTRUCT_H_INCLUDED
