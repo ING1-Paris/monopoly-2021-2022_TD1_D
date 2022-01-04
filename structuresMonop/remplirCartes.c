@@ -50,9 +50,7 @@ void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan)
         fclose(pfileCo);
         printf("fichier ferme");
 
-/**
     //Cartes Chance
-
     FILE* pfileCh=NULL;
 	pfileCh = fopen(("../cartesChance.txt"),"r"); //read
 	if (pfileCh==NULL)
@@ -67,7 +65,7 @@ void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan)
             fgets(tabCartChan[i].evenement, TAILMESSAGE, pfileCh);
 
             // changer recopier avec les bons noms de fichier et tableau de carte (chance)
-            fgets(tabCartCom[i].consequence, TAILMESSAGE, pfileCo);
+            fgets(tabCartChan[i].consequence, TAILMESSAGE, pfileCo);
             fgets(nbL, TAILMESSAGE, pfileCo);   //valeur temporaire
             tabCartCom[i].typeCarte=atoi(nbL);  //atoi() convertit une chaine de carac en un entier
             fgets(nbL, TAILMESSAGE, pfileCo);   //valeur temporaire
@@ -83,6 +81,5 @@ void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan)
         fclose(pfileCh);
         //printf("fichier ferme");
 
-**/
 
 }
