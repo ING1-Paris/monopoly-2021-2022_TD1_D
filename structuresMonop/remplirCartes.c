@@ -28,10 +28,11 @@ void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan)
 	if (pfileCo==NULL)
     {
         printf("erreur d'ouverture fichier cartes communautaires \n");
+        fclose(pfileCh);
     }
     else{
         //printf("fichier ouvert");
-        for (i=0; i<=16; i++) //Tu devras changer le 2 par 16 qd ttes les cartes seront la
+        for (i=0; i<=16; i++)
         {
             fgets(tabCartCom[i].evenement, TAILMESSAGE, pfileCo);
             fgets(tabCartCom[i].consequence, TAILMESSAGE, pfileCo);
@@ -60,7 +61,7 @@ void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan)
     }
     else{
         //printf("fichier ouvert");
-        for (i=0; i<2; i++)
+        for (i=0; i<16; i++)
         {
             fgets(tabCartChan[i].evenement, TAILMESSAGE, pfileCh);
 
