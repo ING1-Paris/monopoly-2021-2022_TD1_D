@@ -83,6 +83,7 @@ void couleur(int nume, t_jeu monopoly);
 //blindages
 void saisieEntPos(int* nb);
 void saisieChaine(int tailleChaine, char* chaine[tailleChaine]);
+void gotoligcol( int lig, int col );
 
 
 #endif // HEADSTRUCT_H_INCLUDED
