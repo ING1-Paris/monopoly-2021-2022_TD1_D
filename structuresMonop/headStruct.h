@@ -63,7 +63,6 @@ typedef struct jeu
     int nbJoueur;
     //int tourDe; //num du joueur qui doit jouer
     //int etape; //tirer les des ou achat ou.. (ce quon peut faire quune fois par tour)
-
  }t_jeu;
 
 ///Sous Programmes
@@ -80,6 +79,9 @@ void saisieAvatarPlateau(t_joueur* tab);
 void couleur(int nume, t_jeu monopoly);
 int lancerDes (t_jeu* monop, int numJoueur);
 void allerEnPrison(t_joueur* lesJoueurs, int numJoueur);
+void affichageRegles();
+void affichageEquipe();
+void pageAccueil();
 
 //blindages
 void saisieEntPos(int* nb);

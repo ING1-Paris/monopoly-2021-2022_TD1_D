@@ -34,6 +34,9 @@
 		<Unit filename="SaisieAvatarPlateau.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="affichageRegles+affichageEquipe.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="aller en prison.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -60,6 +63,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="menuPrincipal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pageAccueil.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="plateau1.c">

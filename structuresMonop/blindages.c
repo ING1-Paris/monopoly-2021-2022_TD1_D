@@ -11,13 +11,9 @@ void saisieEntPos(int* nb){
         *nb=atoi(tempo);
         if (0>=(*nb))
         {
-            printf("\nsaisir un entier positif: ");
+            printf("\n!! Saisie invalide \nveuillez saisir un entier positif different de 0\net compos%c de maximum %d nombres : \t", 0x82, SAISIEMAXNB);
         }
     }while(0>=(*nb));
-    //A supprimer avant de rendre
-    //pr verifier (si lettre rentree apres chiffres seulement les debut sera pris en compte)
-    printf("(Sous programme blindage) votre valeur envoyee : %d \n", *nb);
-
 }
 
 //saisit un entier different de 0
@@ -30,7 +26,7 @@ void saisieEnt(int* nbPosOuNeg){
         *nbPosOuNeg=atoi(tempo);
         if (0==(*nbPosOuNeg))
         {
-            printf("\nsaisir un entier valide svp: ");
+            printf("\n!! Saisie invalide \nveuillez saisir un entier different de 0\net compos%c de maximum %d nombres : \t", 0x82, SAISIEMAXNB);
         }
     }while(0==(*nbPosOuNeg));
 }
@@ -42,10 +38,9 @@ void saisieChaine(int tailleChaine, char* chaine[tailleChaine])
     int i;
     fflush(stdin);
     fgets(chaineTemp, tailleChaine+1, stdin);
-    printf("taille de votre saisie :  %d \n", strlen(chaineTemp));
             while( strlen(chaineTemp) >= (tailleChaine) )
             {
-                printf ("\nSaisie invalide \nVous avez %d caracteres maximum :\t", tailleChaine);
+                printf ("\n!! Saisie invalide, veuillez ressaisir :\n(vous avez %d caracteres maximum)\t", tailleChaine);
                 fflush(stdin);
                 fgets(chaineTemp, tailleChaine+1, stdin);
             }

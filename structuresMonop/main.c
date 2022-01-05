@@ -23,13 +23,23 @@ int main()
     }
 **/
                     ///***************mettez vos VERIFICATIONS ICI*******************//
-
+    pageAccueil();
     menuPrincipal(&monopoly);
+    /**
+    printf("\nMAIN");
+    for (i=0; i<monopoly.nbJoueur; i++)
+    {
+        printf("\npseudo joueur n%d : %s %c", i+1, monopoly.tabJoueurND[i].pseudo, monopoly.tabJoueurND[i].avatarPlateau);
+        printf("\nargent %d ", monopoly.tabJoueurND[i].argent);
+    }
+    **/
+/**
     effacerConsole();
     plateau1();
 
     lancerDes(&monopoly, 0);
-    printf("\n\nemplacement joueur %d : %d", 0, monopoly.tabJoueurND[0].emplacementAct);
+    printf("\n\nemplacement joueur %d : %d", 0, monopoly.tabJoueurND[0].emplacementAct); **/
 
                     ///**************************************************************//
+    return 0;
 }

@@ -4,9 +4,9 @@ void afficherMenuP()
 {
     effacerConsole();
     printf("\t\t\t   MENU PRINCIPAL\n");
-    printf("\tUtilisez Tab pour d%cplacer le curseur et Enter pour valider\n\n", 0x82);
+    printf("\tUtilisez Tab pour d%cplacer le curseur et Entr%ce pour valider\n\n", 0x82, 0x82);
     printf("\n %c Nouvelle partie \n\n %c Charger partie existante \n\n %c Sauvegarder partie actuelle",0x10, 0x10, 0x10);
-    printf("\n\n %c Afficher les regles \n\n %c Afficher le nom des membres de l'%cquipe du projet",0x10, 0x10, 0x82);
+    printf("\n\n %c Afficher les r%cgles \n\n %c Afficher le nom des membres de l'%cquipe du projet",0x10, 0x8A, 0x10, 0x82);
     printf("\n\n %c Quitter le jeu ( pensez %c sauvegarder %c )",0x10,0x85, 0x01);
 }
 
@@ -44,12 +44,14 @@ void menuPrincipal(t_jeu* partieEnCours)
                 //Nouvelle Partie
                 if (coo.Y==4)
                 {
-                    remplissageDebut(&(partieEnCours->nbJoueur), &(partieEnCours->tabJoueurND));
+                    remplissageDebut(&partieEnCours->nbJoueur, &partieEnCours->tabJoueurND);
+                    sortir =1;
                     //tours
                 }
                 //Charger Partie
                 if (coo.Y==6)
                 {
+                    //finir fonction
                 }
                 //Sauvergarder
                 if (coo.Y==8)
@@ -60,27 +62,18 @@ void menuPrincipal(t_jeu* partieEnCours)
                 //Afficher regles
                 if (coo.Y==10)
                 {
-                    //*choix=4;
-                    effacerConsole();
-                    printf("\n\t\t REGLES DU MONOPOLY EDITION CRISE FINANCIERE \n\n");
-                    printf("L'objectif du jeu est de devenir le joueur le plus riche et d'amener vos adversaires a la faillite.\n");
-                    //utiliser fichier txt
-                    printf("\n\n\nAppuyez sur M pour retourner au Menu Principal");
+                    affichageRegles();
                 }
                 //Afficher membres
                 if (coo.Y==12)
                 {
-                    //*choix=5;
-                    effacerConsole();
-                    printf("ECE Campus Paris \nING1 TD1\n\n\tMembres de l'%cquipe D:\n", 0x82);
-                    printf("\n\n COUSY Daria\n DE SAINT PERN Louis-Marie\n EYRAUD J%cr%cmy\n PERRIN Giulian", 0x82, 0x82);
-                    printf("\n\n\nAppuyez sur M pour retourner au Menu Principal");
+                    affichageEquipe();
                 }
                 //Quitter jeu
                 if (coo.Y==14)
                 {
                     effacerConsole();
-                    printf("\n\n\n\t\tA BIENTOT \n\n-l'%cquipe D du TD1",0x82);
+                    printf("\n\n\n\t\tA BIENTOT \n\n\n-l'%cquipe D du TD1",0x82);
                     Sleep(2000);
                     sortir=1;
                 }
@@ -91,7 +84,7 @@ void menuPrincipal(t_jeu* partieEnCours)
                 effacerConsole();
                 afficherMenuP();
                 break;
-/**
+        /**
             //FONCTIONS CACHEES
             //w : afficher la position X Y
             case 'w':
@@ -101,10 +94,11 @@ void menuPrincipal(t_jeu* partieEnCours)
                 effacerConsole();
                 afficherMenuP();
                 break;
-                **/
+        **/
             default: break;
         }
         SetConsoleCursorPosition(hscr,coo);
     } while(sortir!=1);
     effacerConsole();
+    printf("fin");
 }

@@ -1,5 +1,5 @@
 #include "headStruct.h"
-void gotoligcol( int lig, int col )"
+void gotoligcol( int lig, int col )
 {
     // ressources
     COORD mycoord;
