@@ -53,6 +53,9 @@
 		<Unit filename="menuPrincipal.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="nbrmaisonhotel.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="plateau1.c">
 			<Option compilerVar="CC" />
 		</Unit>
