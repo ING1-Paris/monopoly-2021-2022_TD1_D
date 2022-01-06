@@ -34,18 +34,25 @@ void selecUneCase(t_jeu monopoly)
         //Sleep(1000);
         //plateau1();
         switch(ch) {
-            case 9:
+            case tTAB:
                 if(coo.X<89){
                     coo.X=coo.X+12;
                 }
                 else {
-                  if (coo.Y <8 ) {
+                  if (coo.Y <10 ) {
                         coo.X=6;
                         coo.Y=coo.Y + 2;
-                  } else {
-                        coo.X=6;
-                        coo.Y=2;
                   }
+
+                  else
+                  {if (coo.X > 6 && coo.Y > 8)
+                  {
+                    coo.X=6;
+                    coo.Y=2;
+                  }
+                  }
+
+
                 }
                 break;
 

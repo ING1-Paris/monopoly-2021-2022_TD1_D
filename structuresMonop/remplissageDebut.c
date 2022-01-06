@@ -37,12 +37,15 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
         saisieAvatarPlateau(pTabJoueurs);
         for (i=0; i<nbJoueurL; i++)
         {
-            printf ("\nSaisissez votre pseudo joueur %d :\t", i+1);
-            saisieChaine(TAILPSEUDO, &pTabJoueurs[i].pseudo);
-            pTabJoueurs[i].argent=1500;
-            pTabJoueurs[i].emplacementAct=0;
-            pTabJoueurs[i].cartePrison=0;
+            printf ("\nSaisir un pseudo valide \nVous avez %d caracteres maximum :\t", TAILPSEUDO);
+            fflush(stdin);
+            gets(pseudoL);
         }
+        strcpy(pTabJoueurs[i].pseudo, pseudoL);
+        pTabJoueurs[i].argent=1500;
+        pTabJoueurs[i].emplacements=0;
+        pTabJoueurs[i].cartePrison=0;
+
         //Recapitulatif
         effacerConsole();
         printf("Recapitulatif :\n Pseudo du joueur suivit de son avatar :\n");
@@ -119,4 +122,6 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
         scanf("%c", &sortir);
     }while((sortir!='c') && (sortir!='C'));
     effacerConsole();
+    }
+
 }

@@ -46,16 +46,10 @@
 		<Unit filename="couleur.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="des.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="detailUneCase.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="effacerConsole.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="gotoligcol.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="headStruct.h" />
@@ -68,7 +62,13 @@
 		<Unit filename="pageAccueil.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="nbrmaisonhotel.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="plateau1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="prix achat case.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="remplirCartes.c">
@@ -77,13 +77,13 @@
 		<Unit filename="remplissageDebut.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="retourAuJeu.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="sauveg.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="selectionnerUneCase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="traitemMenuPrin.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
