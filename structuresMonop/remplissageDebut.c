@@ -43,7 +43,7 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
         }
         strcpy(pTabJoueurs[i].pseudo, pseudoL);
         pTabJoueurs[i].argent=1500;
-        pTabJoueurs[i].emplacements=0;
+        pTabJoueurs[i].emplacementAct=0;
         pTabJoueurs[i].cartePrison=0;
 
         //Recapitulatif
@@ -90,16 +90,13 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
                 }
             }while((pTabJoueurs[i].emplacementAct)>32);
             printf("\nPossede une carte Sortir de Prison ? 1-OUI 2-NON\n");
-            do
-            {
+            do{
                 saisieEntPos(&choixCarte);
             }while(choixCarte!=1 && choixCarte!=2);
-            if(choixCarte==1)
-            {
+            if(choixCarte==1){
                 pTabJoueurs[i].cartePrison=1;
             }
-            else
-            {
+            else{
                 pTabJoueurs[i].cartePrison=0;
             }
             effacerConsole();
@@ -122,6 +119,4 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
         scanf("%c", &sortir);
     }while((sortir!='c') && (sortir!='C'));
     effacerConsole();
-    }
-
 }

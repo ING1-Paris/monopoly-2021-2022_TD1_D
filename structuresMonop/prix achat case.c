@@ -1,5 +1,5 @@
 #include "headStruct.h"
-
+/** FAUX, garder nvlle version à venir
 void remplirCases(t_jeu*mono);
 char variableLoc[4];
 int i=0;
@@ -24,3 +24,4 @@ FILE* pfileNP=NULL;
     }
 
 }
+**/

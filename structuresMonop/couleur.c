@@ -1,22 +1,13 @@
 #include "headStruct.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <windows.h>
 
-
-void Color(int couleurDuTexte,int couleurDeFond);
 void Color(int couleurDuTexte,int couleurDeFond)     /// permet d afficher les couleurs
 {
     HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 }
 
-
-
-
 void couleur(int nume, t_jeu monopoly)
 {
-
     if (monopoly.tabCase[nume].nGroupeRue == 0)
     {
         Color(15,0);

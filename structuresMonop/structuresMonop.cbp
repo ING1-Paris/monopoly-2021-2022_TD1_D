@@ -52,6 +52,9 @@
 		<Unit filename="effacerConsole.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="gotoligcol.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="headStruct.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
@@ -59,10 +62,10 @@
 		<Unit filename="menuPrincipal.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="pageAccueil.c">
+		<Unit filename="nbrmaisonhotel.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="nbrmaisonhotel.c">
+		<Unit filename="pageAccueil.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="plateau1.c">
@@ -77,13 +80,13 @@
 		<Unit filename="remplissageDebut.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="retourAuJeu.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="sauveg.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="selectionnerUneCase.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="traitemMenuPrin.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

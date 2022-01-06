@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1641339368 source:c:\users\daria\documents\repositorygit1\structuresmonop\main.c
+1641482304 source:c:\users\daria\documents\repositorygit1\structuresmonop\main.c
 	"headStruct.h"
 
-1641338947 c:\users\daria\documents\repositorygit1\structuresmonop\headstruct.h
+1641512078 c:\users\daria\documents\repositorygit1\structuresmonop\headstruct.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -12,37 +12,34 @@
 1641131500 source:c:\users\daria\documents\repositorygit1\structuresmonop\effacerconsole.c
 	"headStruct.h"
 
-1641337535 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplissagedebut.c
+1641509061 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplissagedebut.c
 	"headStruct.h"
 
-1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\plateau1.c
+1641479458 source:c:\users\daria\documents\repositorygit1\structuresmonop\plateau1.c
 	"headStruct.h"
 
-1641296641 source:c:\users\daria\documents\repositorygit1\structuresmonop\sauveg.c
+1641510742 source:c:\users\daria\documents\repositorygit1\structuresmonop\sauveg.c
 	"headStruct.h"
 
-1641336666 source:c:\users\daria\documents\repositorygit1\structuresmonop\blindages.c
+1641479492 source:c:\users\daria\documents\repositorygit1\structuresmonop\blindages.c
 	"headStruct.h"
 
-1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\selectionnerunecase.c
+1641479458 source:c:\users\daria\documents\repositorygit1\structuresmonop\selectionnerunecase.c
 	"headStruct.h"
 
-1641336742 source:c:\users\daria\documents\repositorygit1\structuresmonop\menuprincipal.c
+1641511576 source:c:\users\daria\documents\repositorygit1\structuresmonop\menuprincipal.c
 	"headStruct.h"
 
-1641322904 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplircartes.c
+1641509043 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplircartes.c
 	"headStruct.h"
 
 1641157587 source:c:\users\daria\documents\repositorygit1\structuresmonop\saisieavatarplateau.c
 	"headStruct.h"
 
-1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\couleur.c
+1641510231 source:c:\users\daria\documents\repositorygit1\structuresmonop\couleur.c
 	"headStruct.h"
-	<stdio.h>
-	<stdlib.h>
-	<windows.h>
 
-1641288380 source:c:\users\daria\documents\repositorygit1\structuresmonop\detailunecase.c
+1641510414 source:c:\users\daria\documents\repositorygit1\structuresmonop\detailunecase.c
 	"headStruct.h"
 
 1641322904 source:c:\users\daria\documents\repositorygit1\structuresmonop\des.c
@@ -60,7 +57,7 @@
 1641324156 source:c:\users\daria\documents\repositorygit1\structuresmonop\gotoligcol.c
 	"headStruct.h"
 
-1641339795 source:c:\users\daria\documents\repositorygit1\structuresmonop\pageaccueil.c
+1641342730 source:c:\users\daria\documents\repositorygit1\structuresmonop\pageaccueil.c
 	"headStruct.h"
 
 1641329540 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\blindages.c
@@ -101,5 +98,11 @@
 	"headStruct.h"
 
 1641329540 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\sauveg.c
+	"headStruct.h"
+
+1641508974 source:c:\users\daria\documents\repositorygit1\structuresmonop\nbrmaisonhotel.c
+	"headStruct.h"
+
+1641511747 source:c:\users\daria\documents\repositorygit1\structuresmonop\prix achat case.c
 	"headStruct.h"
 

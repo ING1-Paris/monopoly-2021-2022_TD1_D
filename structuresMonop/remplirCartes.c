@@ -28,7 +28,7 @@ void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan)
 	if (pfileCo==NULL)
     {
         printf("erreur d'ouverture fichier cartes communautaires \n");
-        fclose(pfileCh);
+        fclose(pfileCo);
     }
     else{
         //printf("fichier ouvert");

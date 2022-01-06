@@ -5,8 +5,6 @@ int main()
     t_jeu monopoly;
     t_carte tabCom[16]; //pile cartes communautaires
     t_carte tabChan[16]; //pile cartes chance
-    int choixP=0;//pr menu principal
-    int choixT=0;//pr menu du tour
     int prix=0;
 
     //variables pr verification

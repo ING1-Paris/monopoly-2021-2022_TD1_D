@@ -1,4 +1,4 @@
-#include "headStruct.h"
+#include "headStruct.h" /**
 void nbrhotelmaison(t_jeux*monopoly)
 int compteurmaison = monopoly.tabCase[i].nbrmaison;
 int compteurhotel = monopoly.tabCase[j].nbrhotel;
@@ -22,3 +22,4 @@ if compteurmaison >= 32 {
 if compteurhotel >= 12 {
     printf("Il ne reste plus d hotel");
 }
+**/
