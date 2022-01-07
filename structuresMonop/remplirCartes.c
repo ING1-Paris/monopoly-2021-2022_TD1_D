@@ -68,13 +68,13 @@ void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan)
             // changer recopier avec les bons noms de fichier et tableau de carte (chance)
             fgets(tabCartChan[i].consequence, TAILMESSAGE, pfileCo);
             fgets(nbL, TAILMESSAGE, pfileCo);   //valeur temporaire
-            tabCartCom[i].typeCarte=atoi(nbL);  //atoi() convertit une chaine de carac en un entier
+            tabCartChan[i].typeCarte=atoi(nbL);  //atoi() convertit une chaine de carac en un entier
             fgets(nbL, TAILMESSAGE, pfileCo);   //valeur temporaire
-            tabCartCom[i].deplaceAlaCase=atoi(nbL);
+            tabCartChan[i].deplaceAlaCase=atoi(nbL);
             fgets(nbL, TAILMESSAGE, pfileCo);   //valeur temporaire
-            tabCartCom[i].deplaceDeXCases=atoi(nbL);
+            tabCartChan[i].deplaceDeXCases=atoi(nbL);
             fgets(nbL, TAILMESSAGE, pfileCo);   //valeur temporaire
-            tabCartCom[i].gainOuPerteDeX=atoi(nbL);
+            tabCartChan[i].gainOuPerteDeX=atoi(nbL);
             //apres c bon normalement
 
         }

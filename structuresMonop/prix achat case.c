@@ -1,11 +1,12 @@
 #include "headStruct.h"
-/** FAUX, garder nvlle version à venir
-void remplirCases(t_jeu*mono);
-char variableLoc[4];
-int i=0;
-char nbL[TAILMESSAGE];
+#define TAILLE 5
 
-FILE* pfileNP=NULL;
+void remplirCases(t_jeu*mono)
+{
+    char variableLoc[TAILLE];
+    int i=0;
+
+    FILE* pfileNP=NULL;
 	pfileNP = fopen(("../nomsCasesetPrix.txt"),"r");
 
 		if (pfileNP==NULL)
@@ -14,14 +15,24 @@ FILE* pfileNP=NULL;
         fclose(pfileNP);
     }
     else {
-        for(i=0; i<=32;i++){
-            fgets(mono.tabCase[i].nom,TAILMESSAGE,pfileNP);
-            fgets(variableLoc,4,pfileNP);
-            mono.Case[i].prixAlachat=atoi(nbL);
+        for(i=0; i<=32;i++)
+            {
+            fgets(mono->tabCase[i].nom,TAILMESSAGE,pfileNP);
+            fgets(variableLoc,TAILLE,pfileNP);
+            mono->tabCase[i].prix=atoi(variableLoc);
+            fgets(variableLoc, TAILLE, pfileNP);
+            mono->tabCase[i].facture=atoi(variableLoc);
+            fgets(variableLoc, TAILLE, pfileNP);
+            mono->tabCase[i].pmaison1=atoi(variableLoc);
+            fgets(variableLoc, TAILLE, pfileNP);
+            mono->tabCase[i].pmaison2=atoi(variableLoc);
+            fgets(variableLoc, TAILLE, pfileNP);
+            mono->tabCase[i].pmaison3=atoi(variableLoc);
+            fgets(variableLoc, TAILLE, pfileNP);
+            mono->tabCase[i].pmaison4=atoi(variableLoc);
+            fgets(variableLoc, TAILLE, pfileNP);
+            mono->tabCase[i].photel=atoi(variableLoc);
+            }
 
-
-
-    }
-
+        }
 }
-**/

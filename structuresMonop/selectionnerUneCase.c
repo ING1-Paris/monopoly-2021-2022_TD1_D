@@ -5,6 +5,7 @@
 //https://openclassrooms.com/forum/sujet/probleme-de-deplacement-en-console
 
 // ajout de la variable esc dans la structure pour sortir du jeu
+//FAUT ENLEVER LES * ds les detailsUneCase
 void selecUneCase(t_jeu* monopoly)
 {
     int ch;
