@@ -22,8 +22,9 @@ int main()
     }
 **/
                     ///***************mettez vos VERIFICATIONS ICI*******************//
-    pageAccueil();
-    menuPrincipal(&monopoly);
+    selecUneCase(&monopoly);
+    plateau1();
+
     /**
     printf("\nMAIN");
     for (i=0; i<monopoly.nbJoueur; i++)

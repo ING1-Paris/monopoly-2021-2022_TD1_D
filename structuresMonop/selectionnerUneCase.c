@@ -25,6 +25,10 @@ void selecUneCase(t_jeu* monopoly)
     effacerConsole();
     plateau1();
     printf("%s",msg);
+    gotoligcol(2,19);
+    printf("B");
+    gotoligcol(2,7);
+    printf("A");
     //coo.X=(short)(csbi.srWindow.Right/2);
     SetConsoleCursorPosition(hscr,coo);
     do {
@@ -92,7 +96,7 @@ void selecUneCase(t_jeu* monopoly)
 
                     monopoly->tabCase[numCase].nCateg = 0;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\ntesssssssst");
                     Color(15,0);
@@ -106,7 +110,7 @@ void selecUneCase(t_jeu* monopoly)
                   numCase=1;
                   monopoly->tabCase[numCase].nCateg = 1;
                   monopoly->tabCase[numCase].nGroupeRue = 1;
-                  detailUneCase(numCase, monopoly);
+                  detailUneCase(numCase, *monopoly);
                   couleur(numCase, *monopoly);
                   printf("\n testestestest");
                   Color(15,0);
@@ -120,7 +124,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase=2;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 1;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -134,7 +138,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 3;
                     monopoly->tabCase[numCase].nCateg = 2;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -148,7 +152,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 4;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 1;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -162,7 +166,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 5;
                     monopoly->tabCase[numCase].nCateg = 3;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -176,7 +180,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 6;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 2;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -190,7 +194,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 7;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 2;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -204,7 +208,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 8;
                     monopoly->tabCase[numCase].nCateg = 4;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -218,7 +222,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 9;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 3;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -232,7 +236,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 10;
                     monopoly->tabCase[numCase].nCateg = 5;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -246,7 +250,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 11;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 3;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -260,7 +264,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 12;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 3;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -274,7 +278,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 13;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 4;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -288,7 +292,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 14;
                     monopoly->tabCase[numCase].nCateg = 2;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -302,7 +306,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 15;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 4;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -316,7 +320,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 16;
                     monopoly->tabCase[numCase].nCateg = 6;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -331,7 +335,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 17;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 5;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -345,7 +349,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 18;
                     monopoly->tabCase[numCase].nCateg = 3;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -359,7 +363,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 19;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 5;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -373,7 +377,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 20;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 5;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -387,7 +391,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 21;
                     monopoly->tabCase[numCase].nCateg = 2;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -401,7 +405,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 22;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 6;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -415,7 +419,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 23;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 6;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -429,7 +433,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 24;
                     monopoly->tabCase[numCase].nCateg = 7;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -443,7 +447,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 25;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 7;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -457,7 +461,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 26;
                     monopoly->tabCase[numCase].nCateg = 2;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -471,7 +475,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase  = 27;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 7;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -485,7 +489,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 28;
                     monopoly->tabCase[numCase].nCateg = 8;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -499,7 +503,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 29;
                     monopoly->tabCase[numCase].nCateg = 1;
                     monopoly->tabCase[numCase].nGroupeRue = 2;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -513,7 +517,7 @@ void selecUneCase(t_jeu* monopoly)
                     numCase = 30;
                     monopoly->tabCase[numCase].nCateg = 2;
                     monopoly->tabCase[numCase].nGroupeRue = 0;
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
@@ -531,7 +535,7 @@ void selecUneCase(t_jeu* monopoly)
                     couleur(numCase, *monopoly);
                     printf("\n testestestest");
                     Color(15,0);
-                    detailUneCase(numCase, monopoly);
+                    detailUneCase(numCase, *monopoly);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
                         saisieEntPos(&reponse);
