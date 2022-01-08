@@ -43,10 +43,10 @@ typedef struct laCase
     int nGroupeRue;
     int prix;    ///prix de la rue a l'achat
     int facture; ///prix a payer quand on arrive sur la rue
-    int pmaison1; ///prix à payer si 1 maison
-    int pmaison2; ///prix à payer si 2 maisons
-    int pmaison3; ///prix à payer si 3 maisons
-    int pmaison4; ///prix à payer si 4 maisons
+    int pmaison1; ///prix ï¿½ payer si 1 maison
+    int pmaison2; ///prix ï¿½ payer si 2 maisons
+    int pmaison3; ///prix ï¿½ payer si 3 maisons
+    int pmaison4; ///prix ï¿½ payer si 4 maisons
     int photel;
 
 
@@ -85,7 +85,7 @@ void saisieAvatarPlateau(t_joueur* tab);
 void couleur(int nume, t_jeu monopoly);
 void remplirCases(t_jeu*mono);
 
-//à tester encore
+//ï¿½ tester encore
 int lancerDes (t_jeu* monop, int numJoueur);
 void allerEnPrison(t_joueur* lesJoueurs, int numJoueur);
 void detailUneCase(int num, t_jeu* monopoly);
@@ -96,8 +96,9 @@ void saisieEntPos(int* nb);
 void saisieChaine(int tailleChaine, char chaine[tailleChaine]);
 
 //affichage
-void effacerConsole();
-void plateau1();
+void effacerConsole ();
+void plateau1(t_jeu monopoly);
+
 void retourAuJeu();
 void retourAuMenu();
 void affichageRegles();

@@ -1,6 +1,6 @@
 #include "headStruct.h"
 
-void retourAuJeu()
+void retourAuJeu(t_jeu monopoly)
 {
     char sortir;
     printf("\n\n\n\t\tAppuyez sur J puis Entr%ce pour retourner au Jeu\n",0x82);
@@ -9,7 +9,7 @@ void retourAuJeu()
 
     }while((sortir!='j') && (sortir!='J'));
     effacerConsole();
-    plateau1();
+    plateau1(monopoly);
 }
 
 void retourAuMenu()

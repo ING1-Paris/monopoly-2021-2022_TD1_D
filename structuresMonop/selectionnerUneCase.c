@@ -15,8 +15,8 @@ void selecUneCase(t_jeu* monopoly)
     int l;                                      ///
     /// ///////////////////////////////////////////
     int reponse;
-    int varY; //utilisé pour afficher
-    int varX; //utilisé pour afficher
+    int varY; //utilisï¿½ pour afficher
+    int varX; //utilisï¿½ pour afficher
     //effacerConsole();
     //plateau1();
 
@@ -30,9 +30,6 @@ void selecUneCase(t_jeu* monopoly)
     SetConsoleCursorPosition(hscr,coo);
     effacerConsole();
     plateau1(*monopoly);
-
-
-
     //coo.X=(short)(csbi.srWindow.Right/2);
     SetConsoleCursorPosition(hscr,coo);
     do {

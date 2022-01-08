@@ -6,8 +6,8 @@ char cas[12] = "|__________|";
 int largeur = 3;
 int longueur = 8;
 int ligne;
-int varY; //utilisé pour afficher
-int varX; //utilisé pour afficher
+int varY; //utilisï¿½ pour afficher
+int varX; //utilisï¿½ pour afficher
 /// ///////////////////////////////////////////
 int i;                                      ///
 int j;        ///Variables pour les parcours///

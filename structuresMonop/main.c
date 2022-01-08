@@ -5,12 +5,14 @@ int main()
     t_jeu monopoly;
     t_carte tabCom[16]; //pile cartes communautaires
     t_carte tabChan[16]; //pile cartes chance
+
     monopoly.nbJoueur=0; //indique que a partie n'a pas commencee
     monopoly.tourDe=0; //le joueur 0 commence
     monopoly.etape=0;
     int auJoueurSuiv=0; //Au joueur suivant ? 0 NON 1 OUI
-    int des=0; //dés pour la triche
+    int des=0; //dï¿½s pour la triche
     int fin=0;
+
 
     //variables pr verification
     int i, j;
@@ -47,7 +49,7 @@ int main()
             ///MODE CLASSIQUE NE FONCTIONNE PAS
             else if(monopoly.modeJeu==1)
             {
-                //fonction dés
+                //fonction dï¿½s
                 lancerDes(&monopoly, monopoly.tourDe);
             }
             else
@@ -97,28 +99,5 @@ int main()
     }
 
 
-
-                    ///***************mettez vos VERIFICATIONS ICI*******************//
-//   selecUneCase(&monopoly);
- //   plateau1();
-
-    /**
-    printf("\nMAIN");
-    for (i=0; i<monopoly.nbJoueur; i++)
-    {
-        printf("\npseudo joueur n%d : %s %c", i+1, monopoly.tabJoueurND[i].pseudo, monopoly.tabJoueurND[i].avatarPlateau);
-        printf("\nargent %d ", monopoly.tabJoueurND[i].argent);
-    }
-    **/
-
-
-  /**  printf("Verif MAIN ");
-    for (i=0; i<=16;i++)
-    {
-        printf("carte %d \n evenemt: %s \n conseq: %s", i+1, tabCom[i].evenement, tabCom[i].consequence);
-        printf("\ntype carte %d \n", tabCom[i].typeCarte);
-    }**/
-
-                    ///**************************************************************//
     return 0;
 }
