@@ -26,7 +26,7 @@ if (compteurhotel >= 12) {
 if (compteurmaison <= 32)
 {
     printf("Une maison ici coute %d centimes", monopoly->tabCase[numCaseVoulue].prix);
-    printd("Combien de maisons voulez-vous?");
+    printf("Combien de maisons voulez-vous?");
 }
 
 }

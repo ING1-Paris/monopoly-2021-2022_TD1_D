@@ -3,7 +3,7 @@
 void retourAuJeu()
 {
     char sortir;
-    printf("\n\n\t\tAppuyez sur J puis Entr%ce pour retourner au Jeu\n",0x82);
+    printf("\n\n\n\t\tAppuyez sur J puis Entr%ce pour retourner au Jeu\n",0x82);
     do{
         scanf("%c", &sortir);
 
@@ -15,7 +15,7 @@ void retourAuJeu()
 void retourAuMenu()
 {
     char sortir;
-    printf("\n\n\t\tAppuyez sur M puis Entr%ce pour retourner au Menu\n",0x82);
+    printf("\n\n\n\t\tAppuyez sur M puis Entr%ce pour retourner au Menu\n",0x82);
     do{
         scanf("%c", &sortir);
 

@@ -5,6 +5,8 @@
 #include<string.h>
 #include <windows.h>
 #include <time.h>
+#include <sys/types.h>
+#include <signal.h>
 
 // Valeurs des touches du clavier
 #define tTAB 9
@@ -66,10 +68,10 @@ typedef struct jeu
 {
     t_joueur tabJoueurND[MAXJOUEURS]; //Tableau de Structure de tous les joueurs
     t_case tabCase[32]; //Tableau de Structure de toutes les cases
-    //num de case = son indice
     int nbJoueur;
-    //int tourDe; //num du joueur qui doit jouer
-    //int etape; //tirer les des ou achat ou.. (ce quon peut faire quune fois par tour)
+    int tourDe; //num du joueur qui doit jouer
+    int etape; //0=tirer les des 1= achat 2=au suivant (ce quon peut faire une fois par tour)
+    int modeJeu;
  }t_jeu;
 
 ///Sous Programmes
@@ -77,7 +79,7 @@ void sauve(t_jeu* monjeu);
 //void charge(t_jeu* monjeu, char filenom[], int* succes);
 void selecUneCase(t_jeu* monopoly);
 void menuPrincipal(t_jeu* partieEnCours);
-void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs);
+void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs, int* choixModeJeu);
 void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan);
 void saisieAvatarPlateau(t_joueur* tab);
 void couleur(int nume, t_jeu monopoly);
@@ -91,11 +93,10 @@ void detailUneCase(int num, t_jeu* monopoly);
 
 //blindages
 void saisieEntPos(int* nb);
-void saisieChaine(int tailleChaine, char* chaine[tailleChaine]);
-
+void saisieChaine(int tailleChaine, char chaine[tailleChaine]);
 
 //affichage
-void effacerConsole ();
+void effacerConsole();
 void plateau1();
 void retourAuJeu();
 void retourAuMenu();

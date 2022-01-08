@@ -32,15 +32,12 @@ void saisieEnt(int* nbPosOuNeg){
 }
 
 //saisit une chaine de carac de la taille voulue
-void saisieChaine(int tailleChaine, char* chaine[tailleChaine])
+void saisieChaine(int tailleChaine, char chaine[tailleChaine])
 {
     char chaineTemp[tailleChaine+1];
     int i;
     fflush(stdin);
     fgets(chaineTemp, tailleChaine+1, stdin);
-
-    printf("%d", strlen(chaineTemp));
-
             while( strlen(chaineTemp) >= (tailleChaine) )
             {
                 printf ("\n!! Saisie invalide, veuillez ressaisir :\n(vous avez %d caracteres maximum)\t", tailleChaine);

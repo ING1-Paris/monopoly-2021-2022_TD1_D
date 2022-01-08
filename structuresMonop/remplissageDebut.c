@@ -1,26 +1,25 @@
 #include "headStruct.h"
 //NOUVELLE PARTIE
-void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
+void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs, int* choixModeJeu)
 {
     //variables Locales
-    int choixModeJeu;
     int choixCarte;
     char sortir;
     int i=0;
+    int tricher=0;
     int nbJoueurL=0;
     char pseudoL[TAILPSEUDO];
-    t_joueur tempTabJ[MAXJOUEURS]; //tab temporaire de joueurs
     //choix du mode
     effacerConsole();
     printf("\n\tVous avez deux options de jeu :\n\t\t 1-Mode classique\n\t\t 2-Mode riche (triche possible)\n");
     do
     {
-        scanf("%d",&choixModeJeu);
-    }while(choixModeJeu!=1 && choixModeJeu!=2);
+        scanf("%d",choixModeJeu);
+    }while(*choixModeJeu!=1 && *choixModeJeu!=2);
     //***************************************************************************************
     //MODE CLASSIQUE
     //***************************************************************************************
-    if (choixModeJeu==1)
+    if (*choixModeJeu==1)
     {
         effacerConsole();
         do
@@ -37,15 +36,13 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
         saisieAvatarPlateau(pTabJoueurs);
         for (i=0; i<nbJoueurL; i++)
         {
-            printf ("\nSaisir un pseudo valide \nVous avez %d caracteres maximum :\t", TAILPSEUDO);
-            fflush(stdin);
-            gets(pseudoL);
+            printf ("\nJoueur %d \nSaisissez un pseudo :\t", i+1);
+            saisieChaine(TAILPSEUDO, pTabJoueurs[i].pseudo);
+            pTabJoueurs[i].argent=1500;
+            pTabJoueurs[i].emplacementAct=0;
+            pTabJoueurs[i].cartePrison=0;
+            pTabJoueurs[i].prisonnier=0;
         }
-        strcpy(pTabJoueurs[i].pseudo, pseudoL);
-        pTabJoueurs[i].argent=1500;
-        pTabJoueurs[i].emplacementAct=0;
-        pTabJoueurs[i].cartePrison=0;
-
         //Recapitulatif
         effacerConsole();
         printf("Recapitulatif :\n Pseudo du joueur suivit de son avatar :\n");
@@ -58,7 +55,7 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
     //***************************************************************************************
     //MODE TRICHE / RICHE
     //***************************************************************************************
-    else if (choixModeJeu==2)
+    else if (*choixModeJeu==2)
     {
         effacerConsole();
         do
@@ -76,28 +73,43 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
         for (i=0; i<nbJoueurL; i++)
         {
             printf("\n\t\t   Joueur %d :", i+1);
-            printf ("\nSaisissez pseudo :\t");
-            saisieChaine(TAILPSEUDO, &pTabJoueurs[i].pseudo);
-            printf("\nSaisissez son argent :\t");
-            saisieEntPos(&pTabJoueurs[i].argent);
-            printf("\nSaisissez le numero de case de son emplacement :\n");
-            do
-            {
-                saisieEntPos(&pTabJoueurs[i].emplacementAct);
-                if((pTabJoueurs[i].emplacementAct)>32)
-                {
-                    printf("Veuillez choisir entre 1 et 32 : ");
-                }
-            }while((pTabJoueurs[i].emplacementAct)>32);
-            printf("\nPossede une carte Sortir de Prison ? 1-OUI 2-NON\n");
+            printf ("\nSaisissez un pseudo :\t");
+            saisieChaine(TAILPSEUDO, pTabJoueurs[i].pseudo);
+            printf("\nTricher ? 1-OUI 2-NON\t");
             do{
-                saisieEntPos(&choixCarte);
-            }while(choixCarte!=1 && choixCarte!=2);
-            if(choixCarte==1){
-                pTabJoueurs[i].cartePrison=1;
+                saisieEntPos(&tricher);
+            }while(tricher!=1 && tricher!=2);
+            if (tricher==1) //le joueur peut saisir ses donnees
+            {
+                printf("\nSaisissez son argent :\t");
+                saisieEntPos(&pTabJoueurs[i].argent);
+                printf("\nSaisissez le numero de case de son emplacement :\n");
+                do
+                {
+                    saisieEntPos(&pTabJoueurs[i].emplacementAct);
+                    pTabJoueurs[i].emplacementAct-=1;
+                    if((pTabJoueurs[i].emplacementAct)>=32)
+                    {
+                        printf("Veuillez choisir entre 1 et 32 : ");
+                    }
+                }while((pTabJoueurs[i].emplacementAct)>=32);
+                printf("\nPossede une carte Sortir de Prison ? 1-OUI 2-NON\n");
+                do{
+                    saisieEntPos(&choixCarte);
+                }while(choixCarte!=1 && choixCarte!=2);
+                if(choixCarte==1){
+                    pTabJoueurs[i].cartePrison=1;
+                }
+                else{
+                    pTabJoueurs[i].cartePrison=0;
+                }
             }
-            else{
+            else  //le joueur decide de ne pas tricher, donnees remplies par le jeu
+            {
+                pTabJoueurs[i].argent=1500;
+                pTabJoueurs[i].emplacementAct=0;
                 pTabJoueurs[i].cartePrison=0;
+                pTabJoueurs[i].prisonnier=0;
             }
             effacerConsole();
         }
@@ -108,7 +120,7 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
         {
             printf("\n\n\t\t%s %c",pTabJoueurs[i].pseudo, pTabJoueurs[i].avatarPlateau);
             printf("\nson argent en centimes d'euros: %d", pTabJoueurs[i].argent);
-            printf("\nson emplacement (numero de la case) : %d", pTabJoueurs[i].emplacementAct);
+            printf("\nson emplacement (numero de la case) : %d", pTabJoueurs[i].emplacementAct+1);
             printf("\nCartes ''Sortir de Prison'' en sa possession : %d", pTabJoueurs[i].cartePrison);
         }
     }
@@ -119,4 +131,14 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs)
         scanf("%c", &sortir);
     }while((sortir!='c') && (sortir!='C'));
     effacerConsole();
+}
+
+//**************************************************************************************
+//Melange le tableau de joueurs pour qu'il y ai ordre de passage des joueurs al�atoire :
+//**************************************************************************************
+void melangerTab(int nbJ, t_joueur* pTab)
+{
+    t_joueur tempTabJ[MAXJOUEURS]; //tab temporaire de joueurs
+
+
 }

@@ -46,6 +46,9 @@
 		<Unit filename="couleur.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="des.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="detailUneCase.c">
 			<Option compilerVar="CC" />
 		</Unit>

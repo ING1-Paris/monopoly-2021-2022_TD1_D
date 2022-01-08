@@ -7,14 +7,14 @@ void afficherMenuP()
     printf("\tUtilisez Tab pour d%cplacer le curseur et Entr%ce pour valider\n\n", 0x82, 0x82);
     printf("\n %c Nouvelle partie \n\n %c Charger partie existante \n\n %c Sauvegarder partie actuelle",0x10, 0x10, 0x10);
     printf("\n\n %c Afficher les r%cgles \n\n %c Afficher le nom des membres de l'%cquipe du projet",0x10, 0x8A, 0x10, 0x82);
-    printf("\n\n %c Quitter le jeu ( pensez %c sauvegarder %c )",0x10,0x85, 0x01);
+    printf("\n\n %c Quitter Menu retour au jeu",0x10,0x85, 0x01);
 }
 
 void menuPrincipal(t_jeu* partieEnCours)
 {
     int ch;
-    int choix=0;
     int sortir=0;
+    int unGagnant=0;
     COORD coo;
     HANDLE hscr;
     hscr=GetStdHandle(STD_OUTPUT_HANDLE);
@@ -45,9 +45,16 @@ void menuPrincipal(t_jeu* partieEnCours)
                 //Nouvelle Partie
                 if (coo.Y==4)
                 {
-                    remplissageDebut(&partieEnCours->nbJoueur, &partieEnCours->tabJoueurND);
-                    sortir =1;
-                    //tours
+                    effacerConsole();
+                    if (partieEnCours->nbJoueur==0)
+                    {
+                        remplissageDebut(&partieEnCours->nbJoueur, &(partieEnCours->tabJoueurND), &partieEnCours->modeJeu);
+                    }
+                    else{
+                        printf("\n\nVeuillez relancer le jeu pour commencer une nouvelle partie\n");
+                        Sleep(2000);
+                    }
+                    sortir=1;
                 }
                 //Charger Partie
                 if (coo.Y==6)
@@ -73,9 +80,16 @@ void menuPrincipal(t_jeu* partieEnCours)
                 if (coo.Y==14)
                 {
                     effacerConsole();
-                    printf("\n\n\n\t\tA BIENTOT \n\n\n-l'%cquipe D du TD1",0x82);
-                    Sleep(2000);
-                    choix=1;
+                    if ((partieEnCours->nbJoueur)==0)
+                    {
+                        printf("\n\n\t\tVeuillez commencer une partie avant de retourner au jeu");
+                        Sleep(2000);
+                        effacerConsole();
+                        afficherMenuP();
+                    }
+                    else{
+                        sortir=1;
+                    }
                 }
                 break;
 //effacer partie M
@@ -98,7 +112,13 @@ void menuPrincipal(t_jeu* partieEnCours)
             default: break;
         }
         SetConsoleCursorPosition(hscr,coo);
-    } while(choix==0);
+    } while(sortir==0);
     effacerConsole();
     printf("fin");
+}
+
+
+void unTour(t_jeu* mono, int numJ)
+{
+
 }

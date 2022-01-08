@@ -30,8 +30,8 @@ void sauve(t_jeu* monjeu){
             fwrite(monjeu,sizeof(t_jeu),1,file); // params: pointeur struct, taille, nb objets(1structure), file
             fclose(file);
         }
-        retourAuMenu();
     }
+    retourAuMenu();
 }
 ///chargement d'une structure d'une partie PAS ENCORE FINIT
 void charge(t_jeu* monjeu, char filenom[], int* succes)
