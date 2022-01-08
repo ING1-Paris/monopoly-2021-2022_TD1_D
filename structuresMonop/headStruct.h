@@ -75,7 +75,7 @@ typedef struct jeu
 ///Sous Programmes
 void sauve(t_jeu* monjeu);
 //void charge(t_jeu* monjeu, char filenom[], int* succes);
-void selecUneCase(t_jeu* monopoly, t_joueur joueur);
+void selecUneCase(t_jeu* monopoly);
 void menuPrincipal(t_jeu* partieEnCours);
 void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs);
 void remplirCartes(t_carte* tabCartCom, t_carte* tabCartChan);
@@ -96,7 +96,7 @@ void saisieChaine(int tailleChaine, char* chaine[tailleChaine]);
 
 //affichage
 void effacerConsole ();
-void plateau1();
+void plateau1(t_jeu monopoly);
 void retourAuJeu();
 void retourAuMenu();
 void affichageRegles();

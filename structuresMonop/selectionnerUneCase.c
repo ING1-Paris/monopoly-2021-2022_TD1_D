@@ -6,7 +6,7 @@
 
 // ajout de la variable esc dans la structure pour sortir du jeu
 //FAUT ENLEVER LES * ds les detailsUneCase
-void selecUneCase(t_jeu* monopoly, t_joueur joueur)
+void selecUneCase(t_jeu* monopoly)
 {
     int ch;
     int numCase;
@@ -22,7 +22,7 @@ void selecUneCase(t_jeu* monopoly, t_joueur joueur)
     //effacerConsole();
     //plateau1();
 
-    char *msg="\nUtiliser Tab pour deplacer le curseur et Echap pour quitter le jeu";
+
     ///nTapez s pour sauvegarder la partie/nTapez c pour charger une partie/nTapez echap pour quitter la partie
     COORD coo;
     HANDLE hscr;
@@ -31,24 +31,15 @@ void selecUneCase(t_jeu* monopoly, t_joueur joueur)
     coo.Y=2;
     SetConsoleCursorPosition(hscr,coo);
     effacerConsole();
-    plateau1();
-    printf("%s",msg);
-    monopoly->nbJoueur =4;
-    for (j=0; j<monopoly->nbJoueur; j++)
-    {
-        for (k=0 ; k<8 ; k++)
-        {
-            for(l=0 ; l<4 ; l++)
-            {
-                varY = 2+2*l;
-                varX = 1+12*k + j;
-                gotoligcol(varY,varX);
-                printf(joueur[j].avatarPlateau);
-            }
+    monopoly->tabJoueurND[0].emplacementAct = 0;
+    monopoly->tabJoueurND[1].emplacementAct = 28;
+    monopoly->nbJoueur = 2;
+    monopoly->tabJoueurND[0].avatarPlateau = 'h';
+    monopoly->tabJoueurND[1].avatarPlateau = 'a';
+    plateau1(*monopoly);
 
-        }
-    }
-    gotoligcol(2,19);
+
+
     //coo.X=(short)(csbi.srWindow.Right/2);
     SetConsoleCursorPosition(hscr,coo);
     do {
@@ -83,22 +74,6 @@ void selecUneCase(t_jeu* monopoly, t_joueur joueur)
                 }
                 break;
 
-            case 14: // touche enter
-                //affiche info case à faire
-                break;
-            case 's': case 'S':
-                // sauvegarde à intégrer
-                break;
-
-            case 'c': case 'C':
-                // charger une partie
-                break;
-
-
-            case 'd': case 'D': //lancement des des
-                //if monopoly.etape==lancement de dès
-
-                break;
                 /*
             case 'e': case 'E':
                 coo.X=csbi.srWindow.Right;
@@ -564,8 +539,7 @@ void selecUneCase(t_jeu* monopoly, t_joueur joueur)
               }
                 ///Sleep(5000);
                 effacerConsole();
-                plateau1();
-                printf("%s",msg);
+                plateau1(*monopoly);
                 break;
             default: break;
         }

@@ -23,8 +23,11 @@ int main()
     }
 **/
                     ///***************mettez vos VERIFICATIONS ICI*******************//
-    selecUneCase(&monopoly, joueur);
-    plateau1();
+
+
+
+    selecUneCase(&monopoly);
+    plateau1(monopoly);
 
     /**
     printf("\nMAIN");
