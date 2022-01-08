@@ -25,7 +25,7 @@ int main()
                     ///***************mettez vos VERIFICATIONS ICI*******************//
 
 
-
+    menuPrincipal(&monopoly);
     selecUneCase(&monopoly);
     plateau1(monopoly);
 

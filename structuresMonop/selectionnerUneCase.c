@@ -31,11 +31,11 @@ void selecUneCase(t_jeu* monopoly)
     coo.Y=2;
     SetConsoleCursorPosition(hscr,coo);
     effacerConsole();
-    monopoly->tabJoueurND[0].emplacementAct = 0;
-    monopoly->tabJoueurND[1].emplacementAct = 28;
-    monopoly->nbJoueur = 2;
-    monopoly->tabJoueurND[0].avatarPlateau = 'h';
-    monopoly->tabJoueurND[1].avatarPlateau = 'a';
+   // monopoly->tabJoueurND[0].emplacementAct = 0;
+   // monopoly->tabJoueurND[1].emplacementAct = 31;
+    //monopoly->nbJoueur = 2;
+    //monopoly->tabJoueurND[0].avatarPlateau = 'h';
+    //monopoly->tabJoueurND[1].avatarPlateau = 'a';
     plateau1(*monopoly);
 
 
