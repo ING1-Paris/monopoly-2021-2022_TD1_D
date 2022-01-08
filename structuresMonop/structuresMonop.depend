@@ -134,3 +134,67 @@
 1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\retouraujeu.c
 	"headStruct.h"
 
+1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\affichageregles+affichageequipe.c
+	"headStruct.h"
+
+1641654714 c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\headstruct.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+
+1641454981 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\aller en prison.c
+	"headStruct.h"
+
+1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\blindages.c
+	"headStruct.h"
+
+1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\couleur.c
+	"headStruct.h"
+
+1641196981 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\effacerconsole.c
+	"headStruct.h"
+
+1641296356 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\gotoligcol.c
+	"headStruct.h"
+
+1641654773 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\main.c
+	"headStruct.h"
+
+1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\menuprincipal.c
+	"headStruct.h"
+
+1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\pageaccueil.c
+	"headStruct.h"
+
+1641564333 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\plateau1.c
+	"headStruct.h"
+
+1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\remplissagedebut.c
+	"headStruct.h"
+
+1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\retouraujeu.c
+	"headStruct.h"
+
+1641196981 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\saisieavatarplateau.c
+	"headStruct.h"
+
+1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\sauveg.c
+	"headStruct.h"
+
+1641654146 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\detailunecase.c
+	"headStruct.h"
+
+1641654334 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\nbrmaisonhotel.c
+	"headStruct.h"
+
+1641654146 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\prix achat case.c
+	"headStruct.h"
+
+1641654146 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\remplircartes.c
+	"headStruct.h"
+
+1641654323 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\selectionnerunecase.c
+	"headStruct.h"
+
