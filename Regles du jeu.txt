@@ -1,0 +1,26 @@
+Le but du jeu est de devenir le joueur plus riche en ruinant petit a petit les autres.
+
+Au debut du tour le joueur lance les des.
+Si il arrive sur une case propriete qui n a pas encore ete achetee, il peut lacheter en payant le prix indique sur la case.
+Si la case a deja ete achetee par un autre joueur, on paye le loyer indique sauf si la case est hypothequee.
+Si la case sur laquelle il atterit n'est pas une propriete, il suit les instructions ecrites.
+Si le joueur a fait un double il relance les des
+
+Une fois que le joueur a effectue l'action qui decoule de son lance de des, il a le choix entre differentes actions: 
+-vendre ses maisons ou ses hotels
+-hypothequer une propriete
+-acheter des maisons ou hotels sur ses proprietes
+-terminer son tour
+
+Prison:
+un joueur va en prison si il a effectue trois doubles daffile, si il est tombe sur la case aller en prison ou si il a pioche une carte aller en prison.
+En prison, le joueur continue de recevoir ses loyers et peut acheter ou vendre des maisons et hotels ainsi qu'hypothequer des proprietes.
+Pour sortir de prison, le joueur doit realise un double au debut de son tour, payer une amende ou utiliser une carte sortir de prison quil a piochee ou achetee.
+Apres trois tours sans avoir fait de double, le joueur est oblige de payer une amende.
+
+Faillite:
+un joueur qui doit de largent a un joueur ou a la banque et qui a deja vendu toutes ses maisons et hypotheque toutes ses prorietes est declare en faillite
+il a alors perdu et toutes ses proprietes hypothequees reviennent a celui qui l'a tue
+
+
+
