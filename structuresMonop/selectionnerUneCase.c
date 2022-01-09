@@ -85,7 +85,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestest");
+                    printf("\n Depart");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -99,7 +99,7 @@ void selecUneCase(t_jeu* monopoly)
                   monopoly->tabCase[numCase].nGroupeRue = 1;
                   detailUneCase(numCase, monopoly);
                   couleur(numCase, *monopoly);
-                  printf("\n testestestest");
+                  printf("\n Rue de la descolarisation");
                   Color(15,0);
                   printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -113,7 +113,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 1;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Rue de la precarite");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -127,7 +127,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Gare du demuni");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -141,7 +141,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 1;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Rue de la propagande");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -155,7 +155,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Chance");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -169,7 +169,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 2;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Boulevard du rat");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -183,7 +183,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 2;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Avenue de la dictacture");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -197,7 +197,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Prison");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -211,7 +211,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 3;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Rue du chomage");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -225,7 +225,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Communaute");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -239,7 +239,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 3;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Avenue de larnaque");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -253,7 +253,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 3;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Ruelle du pauvre");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -267,7 +267,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 4;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Ruelle du repas froid");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -281,7 +281,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Gare du ventre vide");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -295,7 +295,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 4;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Boulevard de la misere");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -309,7 +309,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Stationnement gratuit");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -324,7 +324,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 5;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Quartier de la desh");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -338,7 +338,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Rue de la disette");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -352,7 +352,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 5;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Chance");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -366,7 +366,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 5;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Ruelle du miserable");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -380,7 +380,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Gare du besoin");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -394,7 +394,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 6;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Boulevard de la penurie");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -408,7 +408,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 6;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Ruelle du licenciement");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -422,7 +422,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Allez en prison");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -436,7 +436,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 7;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Rue du pauperisme");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -450,7 +450,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Gare du pouilleux");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -464,7 +464,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 7;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Boulevard du gueux");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -478,7 +478,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Impot sur le revenu");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -492,7 +492,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 2;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Route de la plebe");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -506,7 +506,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Communaute");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
@@ -520,7 +520,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 2;
 
                     couleur(numCase, *monopoly);
-                    printf("\n testestestest");
+                    printf("\n Rue de la guerre");
                     Color(15,0);
                     detailUneCase(numCase, monopoly);
                     printf("\n\nSortir ? 1-OUI \n");
