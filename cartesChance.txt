@@ -65,7 +65,7 @@ Placez vous sur la case Depart. Recevez 200 centimes.
 0
 0
 Vous etes invites a un enterrement :
-Allez a nomderue. Recevez 200 centimes si vous passez par la case depart.
+Allez a Rue de la propagande. Recevez 200 centimes si vous passez par la case depart.
 2
 4
 0

@@ -7,7 +7,7 @@ Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue
 Allez en prison :
 Avancez tout droit en prison. Ne passez pas par la case Depart. Ne recevez pas 200 centimes.
 2
-0
+8
 0
 0
 Vous heritez d'un cousin eloigne :
@@ -41,7 +41,7 @@ Perdez 80 centimes.
 0
 -80
 Vous etes invite a un mariage:
-Allez a nomderue.
+Allez a Boulevard du gueux. Recevez 200 centimes si vous passez par la case depart.
 2
 27
 0

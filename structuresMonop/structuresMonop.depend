@@ -62,41 +62,42 @@
 1641342730 source:c:\users\daria\documents\repositorygit1\structuresmonop\pageaccueil.c
 	"headStruct.h"
 
-1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\blindages.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\blindages.c
 	"headStruct.h"
 
-1641563873 c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\headstruct.h
+1641751079 c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\headstruct.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<windows.h>
 	<time.h>
+	<signal.h>
 
 1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\couleur.c
 	"headStruct.h"
 
-1641563873 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\detailunecase.c
+1641564689 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\detailunecase.c
 	"headStruct.h"
 
 1641290454 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\effacerconsole.c
 	"headStruct.h"
 
-1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\main.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\main.c
 	"headStruct.h"
 
-1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\menuprincipal.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\menuprincipal.c
 	"headStruct.h"
 
-1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\plateau1.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\plateau1.c
 	"headStruct.h"
 
-1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\remplissagedebut.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\remplissagedebut.c
 	"headStruct.h"
 
 1641290454 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\saisieavatarplateau.c
 	"headStruct.h"
 
-1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\sauveg.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\sauveg.c
 	"headStruct.h"
 
 1641329540 ated upstream
@@ -107,7 +108,7 @@
 1641566609 source:c:\users\daria\documents\repositorygit1\structuresmonop\prix achat case.c
 	"headStruct.h"
 
-1641479211 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\selectionnerunecase.c
+1641753619 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\selectionnerunecase.c
 	"headStruct.h"
 
 1641563873 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\remplircartes.c
@@ -116,7 +117,7 @@
 1641510622 shed changes
 	"headStruct.h"
 
-1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\affichageregles+affichageequipe.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\affichageregles+affichageequipe.c
 	"headStruct.h"
 
 1641301487 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\aller en prison.c
@@ -131,10 +132,10 @@
 1641563873 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\prix achat case.c
 	"headStruct.h"
 
-1641564117 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\nbrmaisonhotel.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\nbrmaisonhotel.c
 	"headStruct.h"
 
-1641562423 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\retouraujeu.c
+1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\retouraujeu.c
 	"headStruct.h"
 
 1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\affichageregles+affichageequipe.c
@@ -270,5 +271,11 @@
 	"headStruct.h"
 
 1641736475 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\sauveg.c
+	"headStruct.h"
+
+1641301487 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\des.c
+	"headStruct.h"
+
+1641751840 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\case depart.c
 	"headStruct.h"
 

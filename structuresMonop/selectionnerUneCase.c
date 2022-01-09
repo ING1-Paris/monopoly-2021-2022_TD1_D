@@ -85,7 +85,7 @@ void selecUneCase(t_jeu* monopoly)
                     monopoly->tabCase[numCase].nGroupeRue = 0;
                     detailUneCase(numCase, monopoly);
                     couleur(numCase, *monopoly);
-                    printf("\ntesssssssst");
+                    printf("\n testestest");
                     Color(15,0);
                     printf("\n\nSortir ? 1-OUI \n");
                     do{
