@@ -19,8 +19,9 @@ int main()
     int okOuPas;
     int tou;
 
+    //remplirCases(&monopoly);
     remplirCartes(&tabCom, &tabChan);
-    //pageAccueil();
+    pageAccueil();
     menuPrincipal(&monopoly);
     while (fin==0)
     {
@@ -48,7 +49,12 @@ int main()
             else if(monopoly.modeJeu==1)
             {
                 //fonction des
-                lancerDes(&monopoly, monopoly.tourDe);
+                /** La fonction lancerDes devrait aussi deplacer les joueurs
+                if (monopoly.tabJoueurND[monopoly.tourDe].emplacementAct!=8)//si le joueur n'est pas en prison
+                {
+                    monopoly.tabJoueurND[monopoly.tourDe].emplacementPrec=monopoly.tabJoueurND[monopoly.tourDe].emplacementAct;
+                    monopoly.tabJoueurND[monopoly.tourDe].emplacementAct=lancerDes(&monopoly, monopoly.tourDe);
+                }**/
             }
             else
             {
@@ -110,7 +116,5 @@ int main()
             fin=1;
         }
     }
-
-
     return 0;
 }

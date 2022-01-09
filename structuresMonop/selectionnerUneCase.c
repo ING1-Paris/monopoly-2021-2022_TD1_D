@@ -20,7 +20,6 @@ void selecUneCase(t_jeu* monopoly)
     //effacerConsole();
     //plateau1();
 
-
     ///nTapez s pour sauvegarder la partie/nTapez c pour charger une partie/nTapez echap pour quitter la partie
     COORD coo;
     HANDLE hscr;
@@ -60,7 +59,6 @@ void selecUneCase(t_jeu* monopoly)
                       coo.X=6;
                       coo.Y=2;
                   }
-
                 }
                 break;
 
@@ -527,7 +525,6 @@ void selecUneCase(t_jeu* monopoly)
                     do{
                         saisieEntPos(&reponse);
                     }while (reponse!=1);
-
               }
                 ///Sleep(5000);
                 effacerConsole();

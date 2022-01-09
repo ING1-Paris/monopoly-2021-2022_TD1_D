@@ -1,35 +1,34 @@
 # depslib dependency file v1.0
-1641681456 source:c:\users\daria\documents\repositorygit1\structuresmonop\main.c
+1641761100 source:c:\users\daria\documents\repositorygit1\structuresmonop\main.c
 	"headStruct.h"
 
-1641677100 c:\users\daria\documents\repositorygit1\structuresmonop\headstruct.h
+1641760943 c:\users\daria\documents\repositorygit1\structuresmonop\headstruct.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<windows.h>
 	<time.h>
-	<sys/types.h>
 	<signal.h>
 
 1641131500 source:c:\users\daria\documents\repositorygit1\structuresmonop\effacerconsole.c
 	"headStruct.h"
 
-1641679643 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplissagedebut.c
+1641737768 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplissagedebut.c
 	"headStruct.h"
 
-1641674154 source:c:\users\daria\documents\repositorygit1\structuresmonop\plateau1.c
+1641681970 source:c:\users\daria\documents\repositorygit1\structuresmonop\plateau1.c
 	"headStruct.h"
 
-1641676377 source:c:\users\daria\documents\repositorygit1\structuresmonop\sauveg.c
+1641737768 source:c:\users\daria\documents\repositorygit1\structuresmonop\sauveg.c
 	"headStruct.h"
 
 1641649418 source:c:\users\daria\documents\repositorygit1\structuresmonop\blindages.c
 	"headStruct.h"
 
-1641677032 source:c:\users\daria\documents\repositorygit1\structuresmonop\selectionnerunecase.c
+1641761088 source:c:\users\daria\documents\repositorygit1\structuresmonop\selectionnerunecase.c
 	"headStruct.h"
 
-1641677381 source:c:\users\daria\documents\repositorygit1\structuresmonop\menuprincipal.c
+1641737768 source:c:\users\daria\documents\repositorygit1\structuresmonop\menuprincipal.c
 	"headStruct.h"
 
 1641566609 source:c:\users\daria\documents\repositorygit1\structuresmonop\remplircartes.c
@@ -47,13 +46,13 @@
 1641322904 source:c:\users\daria\documents\repositorygit1\structuresmonop\des.c
 	"headStruct.h"
 
-1641650891 source:c:\users\daria\documents\repositorygit1\structuresmonop\retouraujeu.c
+1641737768 source:c:\users\daria\documents\repositorygit1\structuresmonop\retouraujeu.c
 	"headStruct.h"
 
 1641649418 source:c:\users\daria\documents\repositorygit1\structuresmonop\affichageregles+affichageequipe.c
 	"headStruct.h"
 
-1641322904 source:c:\users\daria\documents\repositorygit1\structuresmonop\aller en prison.c
+1641758437 source:c:\users\daria\documents\repositorygit1\structuresmonop\aller en prison.c
 	"headStruct.h"
 
 1641324156 source:c:\users\daria\documents\repositorygit1\structuresmonop\gotoligcol.c
@@ -277,5 +276,8 @@
 	"headStruct.h"
 
 1641751840 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\case depart.c
+	"headStruct.h"
+
+1641755067 source:c:\users\daria\documents\repositorygit1\structuresmonop\case depart.c
 	"headStruct.h"
 

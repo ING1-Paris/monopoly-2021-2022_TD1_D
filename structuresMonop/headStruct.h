@@ -83,10 +83,12 @@ void saisieAvatarPlateau(t_joueur* tab);
 void couleur(int nume, t_jeu monopoly);
 void remplirCases(t_jeu*mono);
 
-//tester encore
 int lancerDes (t_jeu* monop, int numJoueur);
 void allerEnPrison(t_joueur* lesJoueurs, int numJoueur);
 void detailUneCase(int num, t_jeu* monopoly);
+void passagecasedepart(t_jeu*monop, int num);
+void remplirCases(t_jeu*mono);
+void nbrhotelmaison(t_jeu*monopoly, int numCaseVoulue);
 
 
 //blindages
