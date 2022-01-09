@@ -43,6 +43,9 @@
 		<Unit filename="blindages.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="case depart.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="couleur.c">
 			<Option compilerVar="CC" />
 		</Unit>
