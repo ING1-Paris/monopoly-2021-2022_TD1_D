@@ -204,3 +204,71 @@
 1641658065 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\deplacement.c
 	"headStruct.h"
 
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\affichageregles+affichageequipe.c
+	"headStruct.h"
+
+1641736648 c:\users\daria\documents\github\levraigit\d\structuresmonop\headstruct.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+	<signal.h>
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\aller en prison.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\blindages.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\couleur.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\des.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\detailunecase.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\effacerconsole.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\gotoligcol.c
+	"headStruct.h"
+
+1641737180 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\main.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\nbrmaisonhotel.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\pageaccueil.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\plateau1.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\prix achat case.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\remplircartes.c
+	"headStruct.h"
+
+1641736244 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\remplissagedebut.c
+	"headStruct.h"
+
+1641737161 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\menuprincipal.c
+	"headStruct.h"
+
+1641723859 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\retouraujeu.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\saisieavatarplateau.c
+	"headStruct.h"
+
+1641717687 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\selectionnerunecase.c
+	"headStruct.h"
+
+1641736475 source:c:\users\daria\documents\github\levraigit\d\structuresmonop\sauveg.c
+	"headStruct.h"
+

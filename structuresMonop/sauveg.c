@@ -11,7 +11,7 @@ void sauve(t_jeu* monjeu){
     else
     {
         char nom[10];
-        char emplace[40]="c://MONOPsauvegardes/data."; //emplacement fichier
+        char emplace[40]="../MONOPsauvegardes/data."; //emplacement fichier
         printf ("\nsaisir un nom pour la sauvegarde (10caracteres max): ");
         saisieChaine(10, &nom);
         // fflush(stdin);
@@ -33,23 +33,33 @@ void sauve(t_jeu* monjeu){
     }
     retourAuMenu();
 }
-///chargement d'une structure d'une partie PAS ENCORE FINIT
-void charge(t_jeu* monjeu, char filenom[], int* succes)
+///chargement d'une structure d'une partie PAS ENCORE FINIE
+void charge(t_jeu* monjeu, int* succes)
 {
     FILE* file=NULL;
-    file = fopen("c://MONOPsauvegardes/data.lasauvegar","rb+");
+    char nom[10];
+    char emplacement[]="../MONOPsauvegardes/data.";
+    effacerConsole();
+    printf ("\nsaisir un nom de la sauvegarde (10caracteres max): ");
+    saisieChaine(10, &nom);
+    strcat(emplacement ,nom);
+
+    file = fopen(emplacement,"rb+");
     if (file==NULL)
     {
         printf("erreur d'ouverture fichier pour le chargement\n");
-        printf("NB: chargement possible uniquement sur Windows\n");
-        *succes=1; //reproposer un choix
+        printf("\nNB: Verifiez la présence de votre partie dans le dossier ''MONOPsauvegardes''\n");
+        *succes=0; //reproposer un choix
     }
     else
     {
         fread(monjeu,sizeof(t_jeu),1,file);
         //verif
-        printf("SP Nb Joueurs: %d\nPseudoJoueur1: %s\n",monjeu->nbJoueur, monjeu->tabJoueurND[0].pseudo);
+        printf("SP Nb Joueurs: %d\nPseudoJoueur en cours: %s\nEtape en cours :%d\n",monjeu->nbJoueur, monjeu->tabJoueurND[monjeu->tourDe].pseudo,monjeu->etape);
         fclose(file);
-        *succes=0;
+        *succes=1;
+        printf("\chargement termine");
     }
+    retourAuJeu();
+    //retourAuMenu();
 }

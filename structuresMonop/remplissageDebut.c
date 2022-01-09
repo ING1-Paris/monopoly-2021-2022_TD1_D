@@ -45,7 +45,9 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs, int* choixModeJeu)
         }
         //Recapitulatif
         effacerConsole();
-        printf("Recapitulatif :\n Pseudo du joueur suivit de son avatar :\n");
+        melangerTab(nbJoueurL,pTabJoueurs);
+        effacerConsole();
+        printf("\nRecapitulatif ordre de jeu :\n Pseudo du joueur suivit de son avatar :\n");
         for (i=0; i<nbJoueurL; i++)
         {
             printf ("\t%s %c \n\n",pTabJoueurs[i].pseudo, pTabJoueurs[i].avatarPlateau);
@@ -115,7 +117,9 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs, int* choixModeJeu)
         }
         //Recapitulatif
         effacerConsole();
-        printf("\t    Recapitulatif \nPseudo du joueur suivit de son avatar:");
+        melangerTab(nbJoueurL,pTabJoueurs);
+        effacerConsole();
+        printf("\t    Recapitulatif  ordre de jeu \nPseudo du joueur suivit de son avatar:");
         for (i=0; i<nbJoueurL; i++)
         {
             printf("\n\n\t\t%s %c",pTabJoueurs[i].pseudo, pTabJoueurs[i].avatarPlateau);
@@ -138,7 +142,38 @@ void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs, int* choixModeJeu)
 //**************************************************************************************
 void melangerTab(int nbJ, t_joueur* pTab)
 {
+    int i=0;
     t_joueur tempTabJ[MAXJOUEURS]; //tab temporaire de joueurs
+    int Bmax=nbJ-1;
+    int tabindicerestant[nbJ];  //tableau indice des joueurs restants à mélanger
+    int Bmin=0;
+    int alea=0;
+    //permutation des 2 premiers joueurs
+    ///printf("\nmelange tableau");
+    srand(time(NULL)); // ne plus faire meme pour le tirage deplacement
 
-
+    // chargement de la table des indices des joueurs restants
+    for (i = 0; i < nbJ; i++)
+    {
+        tabindicerestant[i]=i;
+    }
+    // alimentation du tableau temporaire
+    for (i = 0; i < nbJ; i++)
+    {
+        alea= rand()%(Bmax-Bmin+1)+Bmin; // tirage aléatoire sur le nombre Max des indices restants
+        ///printf("\nRandom :%d, min :%d, max :%d",alea,Bmin,Bmax);
+        ///printf("\nindicejoueur correspondant :%d",tabindicerestant[alea]);
+        Bmax=Bmax-1;//prochain tour tab indice avec un joueur de moins
+        tempTabJ[i]=pTab[tabindicerestant[alea]]; //alimentation table temp avec l'indice du joueur sélectionné
+        //suppression du joueur sélectionné dans le tableau des indices restants
+        for (int j=alea; j<nbJ-1-i;j++)
+        {
+            tabindicerestant[j]= tabindicerestant[j+1];
+        }
+    }
+    //rechargement du tableau de joueur dans l'ordre melancgé
+    for (i=0; i < nbJ; i++){
+        pTab[i]=tempTabJ[i];
+    }
+    ///Sleep(5000);
 }

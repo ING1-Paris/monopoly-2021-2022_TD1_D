@@ -10,9 +10,9 @@ int main()
     monopoly.tourDe=0; //le joueur 0 commence
     monopoly.etape=0;
     int auJoueurSuiv=0; //Au joueur suivant ? 0 NON 1 OUI
-    int des=0; //d�s pour la triche
+    int des=0; //"des" pour la triche
     int fin=0;
-
+    int compElimine=0; //compteur des joueurs elimines
 
     //variables pr verification
     int i, j;
@@ -24,10 +24,8 @@ int main()
     menuPrincipal(&monopoly);
     while (fin==0)
     {
-        //tester la fin du jeu avec une fonction qui boucle ts les joueurs
         selecUneCase(&monopoly);
-        //devant chaque etape verif si argent sinon passer
-        ///if etape0 : DES + etape+=1;
+        ///if etape0 et joueur non elimine : DES + etape+=1;
         if(monopoly.etape==0 && monopoly.tabJoueurND[monopoly.tourDe].argent>0)
         {
             printf ("\n\n\tc'est au tour de %s %c !",monopoly.tabJoueurND[monopoly.tourDe].pseudo, monopoly.tabJoueurND[monopoly.tourDe].avatarPlateau);
@@ -49,7 +47,7 @@ int main()
             ///MODE CLASSIQUE NE FONCTIONNE PAS
             else if(monopoly.modeJeu==1)
             {
-                //fonction d�s
+                //fonction des
                 lancerDes(&monopoly, monopoly.tourDe);
             }
             else
@@ -57,8 +55,7 @@ int main()
                 printf("\npb Mode de jeu");
             }
         }
-
-        ///if etape 1: action (detailCase) +etape+=1;
+        ///if etape 1 et joueur non elimine: action (detailCase) et etape+=1;
         if (monopoly.etape==1 && monopoly.tabJoueurND[monopoly.tourDe].argent>0)
         {
             effacerConsole();
@@ -75,15 +72,15 @@ int main()
             printf("\nPassons au joueur suivant");
             auJoueurSuiv=1;
         }
-        ///PASSAGE A L'ETAPE SUIVANTE (ACTIONS LIEES A LA CASE : achat/loyer/carte)
+        ///PASSAGE A L'ETAPE SUIVANTE (ACTIONS liees a la case : achat/loyer/carte)
         if(monopoly.etape==0 && monopoly.tabJoueurND[monopoly.tourDe].argent>0)
         {
             monopoly.etape=1;
         }
-        ///JOUEUR SUIVANT ?
+        ///JOUEUR SUIVANT?
         if (auJoueurSuiv==1)
         {
-            printf("JOUEUR SUIV");
+            printf("\nAU JOUEUR SUIVANT");
             Sleep(1000);
             auJoueurSuiv=0;//ce n'est plus au tour du joueur suivant
             monopoly.etape=0;//etape 0 pour le prochain joueur
@@ -95,6 +92,22 @@ int main()
             {
                 monopoly.tourDe=0;
             }
+        }
+
+        for(i=0; i<monopoly.nbJoueur; i++)
+        {
+            if(monopoly.tabJoueurND[i].argent<=0)
+            {
+                compElimine+=1;
+            }
+        }
+        if(compElimine>=(monopoly.nbJoueur-1))
+        {
+            effacerConsole();
+            printf("\nPartie finie, il ne reste qu'un joueur !");
+            printf("\n\n\n\t\tA BIENTOT \n\n\n-l'%cquipe D du TD1",0x82);
+            Sleep(2000);
+            fin=1;
         }
     }
 

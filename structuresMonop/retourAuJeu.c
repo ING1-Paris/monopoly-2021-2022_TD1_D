@@ -3,13 +3,12 @@
 void retourAuJeu(t_jeu monopoly)
 {
     char sortir;
-    printf("\n\n\n\t\tAppuyez sur J puis Entr%ce pour retourner au Jeu\n",0x82);
+    printf("\n\n\n\t\tAppuyez sur C puis Entr%ce pour continuer\n",0x82);
     do{
         scanf("%c", &sortir);
 
-    }while((sortir!='j') && (sortir!='J'));
+    }while((sortir!='c') && (sortir!='C'));
     effacerConsole();
-    plateau1(monopoly);
 }
 
 void retourAuMenu()

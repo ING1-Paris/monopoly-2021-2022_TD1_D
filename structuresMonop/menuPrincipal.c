@@ -8,6 +8,7 @@ void afficherMenuP()
     printf("\n %c Nouvelle partie \n\n %c Charger partie existante \n\n %c Sauvegarder partie actuelle",0x10, 0x10, 0x10);
     printf("\n\n %c Afficher les r%cgles \n\n %c Afficher le nom des membres de l'%cquipe du projet",0x10, 0x8A, 0x10, 0x82);
     printf("\n\n %c Quitter Menu retour au jeu",0x10,0x85, 0x01);
+
 }
 
 void menuPrincipal(t_jeu* partieEnCours)
@@ -18,11 +19,11 @@ void menuPrincipal(t_jeu* partieEnCours)
     COORD coo;
     HANDLE hscr;
     hscr=GetStdHandle(STD_OUTPUT_HANDLE);
+    effacerConsole();
+    afficherMenuP();
     coo.X=1;    //coordonnee X debut
     coo.Y=4;    //coordonnee Y debut
     SetConsoleCursorPosition(hscr,coo);
-    effacerConsole();
-    afficherMenuP();
     do {
         ch=getch();//obtient touche appuyee
 
@@ -60,6 +61,17 @@ void menuPrincipal(t_jeu* partieEnCours)
                 if (coo.Y==6)
                 {
                     //finir fonction
+                    int success=0;
+                    charge(partieEnCours, &success);
+                    if(success==1)
+                    {
+                        printf("\n chargement termine\n");
+                        sortir=1;
+                    }else
+                    {
+                        sortir=0;
+                        retourAuMenu();
+                    }
                 }
                 //Sauvergarder
                 if (coo.Y==8)
@@ -88,10 +100,12 @@ void menuPrincipal(t_jeu* partieEnCours)
                         afficherMenuP();
                     }
                     else{
+                        printf("\n\n\n\t\tA BIENTOT \n\n\n-l'%cquipe D du TD1",0x82);
+                        Sleep(2000);
                         sortir=1;
                     }
                 }
-                break;
+                //break;
 //effacer partie M
             //M : retourner au Menu (reafficher)
             case 'm': case 'M':

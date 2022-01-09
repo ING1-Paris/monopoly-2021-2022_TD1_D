@@ -5,13 +5,11 @@
 #include<string.h>
 #include <windows.h>
 #include <time.h>
-#include <sys/types.h>
-#include <signal.h>
+#include <signal.h> //en
 
 // Valeurs des touches du clavier
 #define tTAB 9
 #define tENTER 13
-#define tESC '\x1b'//pr l'exemple selectionnerUneCase
 
 #define MAXJOUEURS 10
 #define TAILPSEUDO 10
@@ -76,7 +74,7 @@ typedef struct jeu
 
 ///Sous Programmes
 void sauve(t_jeu* monjeu);
-//void charge(t_jeu* monjeu, char filenom[], int* succes);
+void charge(t_jeu* monjeu, int* succes);
 void selecUneCase(t_jeu* monopoly);
 void menuPrincipal(t_jeu* partieEnCours);
 void remplissageDebut(int* pNbJ, t_joueur* pTabJoueurs, int* choixModeJeu);
@@ -85,7 +83,7 @@ void saisieAvatarPlateau(t_joueur* tab);
 void couleur(int nume, t_jeu monopoly);
 void remplirCases(t_jeu*mono);
 
-//� tester encore
+//tester encore
 int lancerDes (t_jeu* monop, int numJoueur);
 void allerEnPrison(t_joueur* lesJoueurs, int numJoueur);
 void detailUneCase(int num, t_jeu* monopoly);
@@ -98,7 +96,6 @@ void saisieChaine(int tailleChaine, char chaine[tailleChaine]);
 //affichage
 void effacerConsole ();
 void plateau1(t_jeu monopoly);
-
 void retourAuJeu();
 void retourAuMenu();
 void affichageRegles();
