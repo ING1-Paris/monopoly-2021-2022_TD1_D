@@ -137,20 +137,21 @@
 1641751079 source:c:\users\giulian perrin\documents\github\monopoly-2021-2022_cdaria\structuresmonop\retouraujeu.c
 	"headStruct.h"
 
-1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\affichageregles+affichageequipe.c
+1641734114 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\affichageregles+affichageequipe.c
 	"headStruct.h"
 
-1641665448 c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\headstruct.h
+1641812867 c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\headstruct.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<windows.h>
 	<time.h>
+	<signal.h>
 
 1641454981 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\aller en prison.c
 	"headStruct.h"
 
-1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\blindages.c
+1641734114 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\blindages.c
 	"headStruct.h"
 
 1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\couleur.c
@@ -162,28 +163,28 @@
 1641296356 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\gotoligcol.c
 	"headStruct.h"
 
-1641665612 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\main.c
+1641812867 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\main.c
 	"headStruct.h"
 
-1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\menuprincipal.c
+1641750623 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\menuprincipal.c
 	"headStruct.h"
 
 1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\pageaccueil.c
 	"headStruct.h"
 
-1641666403 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\plateau1.c
+1641901267 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\plateau1.c
 	"headStruct.h"
 
-1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\remplissagedebut.c
+1641750623 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\remplissagedebut.c
 	"headStruct.h"
 
-1641664881 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\retouraujeu.c
+1641750623 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\retouraujeu.c
 	"headStruct.h"
 
 1641196981 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\saisieavatarplateau.c
 	"headStruct.h"
 
-1641550136 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\sauveg.c
+1641750623 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\sauveg.c
 	"headStruct.h"
 
 1641654146 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\detailunecase.c
@@ -198,7 +199,7 @@
 1641654146 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\remplircartes.c
 	"headStruct.h"
 
-1641666415 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\selectionnerunecase.c
+1641812867 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\selectionnerunecase.c
 	"headStruct.h"
 
 1641658065 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\deplacement.c
@@ -279,5 +280,11 @@
 	"headStruct.h"
 
 1641755067 source:c:\users\daria\documents\repositorygit1\structuresmonop\case depart.c
+	"headStruct.h"
+
+1641454981 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\des.c
+	"headStruct.h"
+
+1641754403 source:c:\users\jerem\onedrive\documents\github\monopoly-2021-2022_cdaria\structuresmonop\case depart.c
 	"headStruct.h"
 

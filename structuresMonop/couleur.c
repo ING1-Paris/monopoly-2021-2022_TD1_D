@@ -34,7 +34,7 @@ void couleur(int nume, t_jeu monopoly)
     }
         if (monopoly.tabCase[nume].nGroupeRue == 6)
     {
-        Color(15,14);
+        Color(0,14);
     }
         if (monopoly.tabCase[nume].nGroupeRue == 7)
     {
